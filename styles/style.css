@@ -1,4 +1,4 @@
-
+/* Estilos generales */
 @import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
 
 * {
@@ -7,17 +7,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
+/* inician estilos de la barra de navegacion */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 10px;
     background-color: #ececec;
 }
 
 .logo {
-    max-width: 5rem;
+    max-width: 200px;
 }
 
 .nav-list {
@@ -84,3 +84,294 @@ header {
         color: #ecececec;
     }
 }
+
+/* terminan estilos de la barra de navegacion */
+
+/* inician estilos de jumbotrom */
+
+main{
+    height: 80vh;
+}
+
+main .imagen1 {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/multimedia/fiesta.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen1 h1 {
+    color: white;
+    text-align: center;
+}
+
+.imagen1 p{
+    color: white;
+}
+
+.informacion1 {
+    background-color: #73279656;
+    width: 50%;
+    border-radius: 30px;
+    padding: 20px;
+    background-size: contain;
+}
+/* 
+main img{
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+/* terminan estilos de jumbotrom */
+
+/* Inician estilos nuestra mision */
+.contenedor {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 350px;
+}
+
+.item1{
+    background-image: url(/assets/multimedia/fiesta1.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.item4{
+    background-image: url(/assets/multimedia/fiesta2.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.item5{
+    background-image: url(/assets/multimedia/fiesta3.jpg);
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 550px) {
+    .contenedor {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        height: 350px;
+    }
+}
+/* Terminan estilos nuestra mision */
+
+/* inician estilos de seccion de equipo la pagina */
+
+.logo-equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(117, 117, 117);
+    padding: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.logo-equipo img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+/* terminan estilos de seccion de  equipo la pagina */
+.cards{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 350px;
+}
+
+@media screen and (max-width: 550px) {
+    .cards {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        height: 350px;
+    }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+/* Inician estilos de footer */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #732796;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #732796;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #480966;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:550px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+.box a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.box img {
+    background-color: #fff;
+}
+
+.fa {
+    font-size: 40px;
+}
+
+/* Terminan estilos de footer */
+
+
