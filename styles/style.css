@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 /* inician estilos de la barra de navegacion */
 header {
     display: flex;
@@ -28,15 +29,23 @@ header {
 
 .nav-list li a {
     text-decoration: none;
-    color: #1c1c1c;
+    color: #732796;
 }
+
+/*Darle formato de boton a Acceso */
+/* .nav-list li:nth-child(5) a {
+
+} */
 
 .abrir-menu,
 .cerrar-menu {
     display: none;
 }
 
+/* Inician los media queries de la NavBar */
+
 @media screen and (max-width: 550px) {
+
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -65,7 +74,7 @@ header {
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #B99EE8;
+        background-color: #b99ee8;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
@@ -74,7 +83,7 @@ header {
         opacity: 1;
         visibility: visible;
     }
-    
+
     .nav-list {
         flex-direction: column;
         align-items: left;
@@ -84,12 +93,11 @@ header {
         color: #ecececec;
     }
 }
+/* Terminan estilos de la barra de navegacion */
 
-/* terminan estilos de la barra de navegacion */
 
 /* inician estilos de jumbotrom */
-
-main{
+main {
     height: 80vh;
 }
 
@@ -97,7 +105,7 @@ main .imagen1 {
     text-align: center;
     width: 100%;
     height: 100%;
-    background-image: url(/assets/multimedia/fiesta.jpg); 
+    background-image: url(/assets/multimedia/fiesta.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +119,7 @@ main .imagen1 {
     text-align: center;
 }
 
-.imagen1 p{
+.imagen1 p {
     color: white;
 }
 
@@ -122,6 +130,7 @@ main .imagen1 {
     padding: 20px;
     background-size: contain;
 }
+
 /* 
 main img{
     width: auto;
@@ -148,7 +157,7 @@ main img{
     height: 350px;
 }
 
-.item1{
+.item1 {
     background-image: url(/assets/multimedia/fiesta1.jpg);
     width: auto;
     height: auto;
@@ -158,7 +167,7 @@ main img{
     border-radius: 10px;
 }
 
-.item4{
+.item4 {
     background-image: url(/assets/multimedia/fiesta2.jpg);
     width: auto;
     height: auto;
@@ -168,7 +177,7 @@ main img{
     border-radius: 10px;
 }
 
-.item5{
+.item5 {
     background-image: url(/assets/multimedia/fiesta3.jpg);
     width: auto;
     height: auto;
@@ -184,6 +193,7 @@ main img{
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+
     .item {
         border: 1px solid #ccc;
         padding: 20px;
@@ -192,6 +202,7 @@ main img{
         height: 350px;
     }
 }
+
 /* Terminan estilos nuestra mision */
 
 /* inician estilos de seccion de equipo la pagina */
@@ -210,19 +221,25 @@ h3 {
 }
 
 .logo-equipo img {
-    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    max-width: 100%;
+    /* La imagen no excederá el ancho del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de la imagen */
 }
 
 /* terminan estilos de seccion de  equipo la pagina */
-.cards{
+.cards {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.card{
+/* Contenedor principal para card general */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
@@ -235,6 +252,7 @@ h3 {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
     }
+
     .card {
         border: 1px solid #ccc;
         padding: 20px;
@@ -244,88 +262,104 @@ h3 {
     }
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* El contenedor de tarjetas invertidas: establece el ancho y el alto como quieras. Hemos agregado la propiedad de borde para demostrar que el giro en sí sale del cuadro al pasar el mouse (elimine la perspectiva si no desea el efecto 3D). */
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+    perspective: 1000px;
+    /* Elimina esto si no quieres el efecto 3D.*/
+}
+
+/* Este contenedor es necesario para colocar la parte delantera y trasera */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Haga un giro horizontal cuando mueva el mouse sobre el contenedor del cuadro giratorio */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Coloque la parte delantera y trasera. */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Dale estilo al anverso (reserva si falta la imagen) */
+.flip-card-front {
     background-color: #bbb;
     color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+}
+
+.flip-card-front img{
+    width:100%; 
+    height:100%; 
+    object-fit: cover;
+} 
+
+/* Dale estilo a la parte trasera */
+.flip-card-back {
+    background-color: #BFBFBF;
+    color:#732796;
     transform: rotateY(180deg);
-  }
-  
+    font-size: 16px;
+}
 
-/* Inician estilos de footer */
 
-.pie-pagina{
+/* --------------- Inician estilos de footer ------------------*/
+
+.pie-pagina {
     width: 100%;
     background-color: #732796;
 }
-.pie-pagina .grupo-1{
+
+.pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:50px;
+    grid-gap: 50px;
     padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
     width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -337,23 +371,27 @@ h3 {
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
-.pie-pagina .grupo-2{
+
+.pie-pagina .grupo-2 {
     background-color: #480966;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
     font-size: 15px;
 }
-@media screen and (max-width:550px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:550px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
@@ -373,5 +411,3 @@ h3 {
 }
 
 /* Terminan estilos de footer */
-
-
