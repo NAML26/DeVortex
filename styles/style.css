@@ -16,7 +16,10 @@ header {
     padding: 10px;
     background-color: #ececec;
 }
-
+.especial2{
+    background-color: black;
+    padding: 10px 40px;
+}
 .logo {
     max-width: 200px;
 }
@@ -33,9 +36,16 @@ header {
 }
 
 /*Darle formato de boton a Acceso */
-/* .nav-list li:nth-child(5) a {
+.nav-list li:nth-child(5) a {
+    color: white; 
+    margin: 0px 60px;
+    border-radius: 10px;
 
-} */
+    .nav-list li:nth-child(5) a:hover {
+        background-color: #b99ee8
+    }
+} 
+
 
 .abrir-menu,
 .cerrar-menu {
@@ -56,7 +66,7 @@ header {
     }
 
     .abrir-menu {
-        color: black;
+        color: #732796;
     }
 
     .cerrar-menu {
@@ -129,7 +139,12 @@ main .imagen1 {
     border-radius: 30px;
     padding: 20px;
     background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /* 
 main img{
@@ -212,7 +227,7 @@ main img{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: rgb(117, 117, 117);
+    background-color: #262626;
     padding: 20px;
 }
 
@@ -240,14 +255,52 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
     text-align: center;
     height: 350px;
+    word-wrap: break-word;
+}
+/* @media screen and (max-width: 320px){
+    .informacion1 >img{
+        display: none;
+        font-size: 50px;
+    } 
+    .informacion1 img{
+        display: none;
+    }
+} */
+@media screen and (max-width:850px){
+    .informacion1 >img{
+        width: 300px ;
+        height: 150px ;
+    }
+
+    .flip-card {
+        width: 150px;
+        height: 180px;
+        font-size: 14px;
+    }
+
+    /* .flip-card > h3 {
+     font-size: 50px;
+    } */
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 2fr);
+    }
+    .card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        height: 350px;
+    }
 }
 
-@media screen and (max-width: 550px) {
+@media only screen and (min-width: 320px) and (max-width: 550px){
     .cards {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
@@ -262,13 +315,31 @@ h3 {
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 550px){
+    #especial {
+        display: none;
+    }
+    .informacion1{
+        width: 300px;
+    }
+    .imagen1{
+        height: 400px !important;
+    }
+    main {
+        height: 60vh;
+    }
+}
+
+
+
 /* El contenedor de tarjetas invertidas: establece el ancho y el alto como quieras. Hemos agregado la propiedad de borde para demostrar que el giro en sí sale del cuadro al pasar el mouse (elimine la perspectiva si no desea el efecto 3D). */
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
-    border: 1px solid #f1f1f1;
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid #BFBFBF;
     perspective: 1000px;
+    
     /* Elimina esto si no quieres el efecto 3D.*/
 }
 
@@ -278,7 +349,7 @@ h3 {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
 }
 
@@ -296,6 +367,7 @@ h3 {
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
+    
 }
 
 /* Dale estilo al anverso (reserva si falta la imagen) */
@@ -308,15 +380,25 @@ h3 {
     width:100%; 
     height:100%; 
     object-fit: cover;
+    
 } 
 
 /* Dale estilo a la parte trasera */
 .flip-card-back {
     background-color: #BFBFBF;
-    color:#732796;
+    color:#262626;
     transform: rotateY(180deg);
-    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 12px ;
 }
+
+ .flip-card-back  /*h3*/ p{
+    /* max-width: 100% */
+    font-size: 1em;
+} 
 
 
 /* --------------- Inician estilos de footer ------------------*/
@@ -394,6 +476,11 @@ h3 {
         grid-gap: 30px;
         padding: 35px 0px;
     }
+    .informacion1 >img{
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+    }
 }
 
 .box a {
@@ -403,11 +490,13 @@ h3 {
 }
 
 .box img {
-    background-color: #fff;
+    background-color: #732796;
 }
 
 .fa {
     font-size: 40px;
 }
+
+
 
 /* Terminan estilos de footer */
