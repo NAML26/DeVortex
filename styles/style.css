@@ -16,10 +16,6 @@ header {
     padding: 10px;
     background-color: #ececec;
 }
-.especial2{
-    background-color: black;
-    padding: 10px 40px;
-}
 .logo {
     max-width: 200px;
 }
@@ -35,24 +31,20 @@ header {
     color: #732796;
 }
 
-/*Darle formato de boton a Acceso */
-.nav-list li:nth-child(5) a {
-    color: white; 
-    margin: 0px 60px;
+.especial2 {
+    background-color: #732796;
+    color: white;
+    padding: 10px 40px;
+    margin: 0px;
     border-radius: 10px;
-
-    .nav-list li:nth-child(5) a:hover {
-        background-color: #b99ee8
-    }
-} 
-
-
+    
+}
 .abrir-menu,
 .cerrar-menu {
     display: none;
 }
 
-/* Inician los media queries de la NavBar */
+/*------------ Inician los media queries de la NavBar -----------*/
 
 @media screen and (max-width: 550px) {
 
@@ -103,10 +95,9 @@ header {
         color: #ecececec;
     }
 }
-/* Terminan estilos de la barra de navegacion */
 
 
-/* inician estilos de jumbotrom */
+/*------------------- inician estilos de jumbotrom ---------------*/
 main {
     height: 80vh;
 }
@@ -154,9 +145,8 @@ main img{
     background-position: center;
     background-repeat: no-repeat;
 } */
-/* terminan estilos de jumbotrom */
 
-/* Inician estilos nuestra mision */
+/*---------------- Inician estilos nuestra mision -------------*/
 .contenedor {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -218,9 +208,7 @@ main img{
     }
 }
 
-/* Terminan estilos nuestra mision */
-
-/* inician estilos de seccion de equipo la pagina */
+/*--------- inician estilos de seccion de equipo la pagina -------- */
 
 .logo-equipo {
     display: flex;
@@ -330,7 +318,7 @@ h3 {
     }
 }
 
-
+/*----------------- Inician estilos de CARDS  ------------------*/
 
 /* El contenedor de tarjetas invertidas: establece el ancho y el alto como quieras. Hemos agregado la propiedad de borde para demostrar que el giro en sí sale del cuadro al pasar el mouse (elimine la perspectiva si no desea el efecto 3D). */
 .flip-card {
@@ -497,6 +485,35 @@ h3 {
     font-size: 40px;
 }
 
+/*--------------- Inician estilos de contactanos --------------*/
+.contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 20px;
+    width: 100%;
+}
 
+.color-white{
+    color: white;
+}
 
-/* Terminan estilos de footer */
+.contactanos-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 7px rgba(115,39,150,1);
+}
+
+.formulario h1{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+/*  Terminan estilos de contacto*/
