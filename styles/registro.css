@@ -1,13 +1,3 @@
-/* Estilos generales */
-@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
 /* inician estilos de la barra de navegacion */
 header {
     display: flex;
@@ -44,7 +34,7 @@ header {
     display: none;
 }
 
-/------------ Inician los media queries de la NavBar -----------/
+/*------------ Inician los media queries de la NavBar -----------*/
 
 @media screen and (max-width: 550px) {
 
@@ -104,7 +94,7 @@ header {
 
 
 
-/------------------- inician estilos de jumbotrom ---------------/
+/*------------------- inician estilos de jumbotrom ---------------*/
 main {
     height: 80vh;
 }
