@@ -28,27 +28,32 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.getElementById('modalContainer').innerHTML = modalContent;
 
     // Después de cargar el modal, inicializa Bootstrap y otros scripts si es necesario
-    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+  //  var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
 
     // Mostrar el modal
-    function showModal() {
+   /*  function showModal() {
       myModal.show();
-    }
+      //
+      //
+      //
+      //
+      //acciones para registro
+    } */
 
     // Ocultar el modal
-    function hideModal() {
+   /*  function hideModal() {
       myModal.hide();
-    }
+    } */
 
     // Asignar eventos a los botones u otros elementos para mostrar y ocultar el modal
-    var showButton = document.getElementById('showModalButton'); // Reemplaza 'showModalButton' con el ID de tu botón para mostrar el modal
-    var hideButton = document.getElementById('hideModalButton'); // Reemplaza 'hideModalButton' con el ID de tu botón para ocultar el modal
+   // var showButton = document.getElementById('showModalButton'); // Reemplaza 'showModalButton' con el ID de tu botón para mostrar el modal
+    //var hideButton = document.getElementById('hideModalButton'); // Reemplaza 'hideModalButton' con el ID de tu botón para ocultar el modal
 
     // Evento para mostrar el modal al hacer clic en el botón correspondiente
-    showButton.addEventListener('click', showModal);
+   // showButton.addEventListener('click', showModal);
 
     // Evento para ocultar el modal al hacer clic en el botón correspondiente
-    hideButton.addEventListener('click', hideModal);
+    //hideButton.addEventListener('click', hideModal);
 
   } catch (error) {
     console.error(error);
