@@ -1,0 +1,40 @@
+/* Estilos generales */
+@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
+.btn-signup {
+    width: 130px;
+    height: 42px;
+    background-color: #732796;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.ingresa {
+    color: #732796;
+    font-weight: bold;
+}
+
+.fa-google {
+    background: linear-gradient(to right, #DB4437, #4285F4, #F4B400, #0F9D58);
+-webkit-background-clip: text;
+color: transparent;
+/* color: #1a1b1a; */
+ font-size: 50px;
+}
+
+.modal-content {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.mb-3 {
+    text-align: left;
+}
+
+p{
+    font-weight: bold;
+}
