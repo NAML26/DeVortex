@@ -1,4 +1,4 @@
-main{
+main {
     display: flex;
     flex-direction: column;
 
@@ -7,13 +7,13 @@ main{
     height: auto;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     margin: 2px;
     font-size: 22px;
-    color:  #732796;
+    color: #732796;
     text-shadow: 4px 4px 8px #b99ee8;
-    
+
 }
 
 .container {
@@ -28,12 +28,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #732796 !important;
-    border: solid 1px  #732796 !important;
+    border: solid 1px #732796 !important;
 }
 
 /* img {
@@ -41,7 +41,19 @@ main{
     height: 100%;
 } */
 
-.texto--lugares{
+.texto--lugares {
     margin: 20px;
 }
 
+.espera{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .normal {
+        display: none;
+    }
+    .espera{
+        display: block;
+    }
+}
