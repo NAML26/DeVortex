@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 id="exampleModalLabel">Crear una cuenta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Correo electrónico</label>
+                                <input type="text" class="form-control" id="recipient-name" placeholder="usuario@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Contraseña</label>
+                                <input class="form-control" id="message-text" placeholder="************"></input>
+                            </div>
+                            <p>¿Ya tienes una cuenta? <span class="ingresa">Ingresa aquí</span></p>
+                            <p>O regístrate con tu cuenta de Google</p>
+                            <i class="fa-brands fa-google"></i>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-signup">Registrarse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
