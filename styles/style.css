@@ -94,6 +94,9 @@ header {
     .nav-list li a {
         color: #ecececec;
     }
+    .contactanos-formulario {
+        width: 100%;
+    }
 }
 
 
@@ -206,6 +209,9 @@ main img{
         text-align: center;
         height: 350px;
     }
+    .contactanos-formulario {
+        width: 100%;
+    }
 }
 
 /*--------- inician estilos de seccion de equipo la pagina -------- */
@@ -301,6 +307,9 @@ h3 {
         text-align: center;
         height: 350px;
     }
+    .contactanos-formulario {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 550px){
@@ -315,6 +324,9 @@ h3 {
     }
     main {
         height: 60vh;
+    }
+    .contactanos-formulario {
+        width: 100%;
     }
 }
 
