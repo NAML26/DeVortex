@@ -12,6 +12,8 @@ main {
   height: 100vh;
 }
 
+
+
 /* inician estilos de la barra de navegacion */
 header {
   min-height: 100px;
@@ -43,6 +45,7 @@ header {
   padding: 10px 40px;
   margin: 0px;
   border-radius: 10px;
+  border: none;
 }
 .abrir-menu,
 .cerrar-menu {

@@ -1,0 +1,60 @@
+/* main {
+   /*  height: 80vh; */
+}
+
+/* .contenedor-invitaciones-17, .contenedor-invitaciones-18, .contenedor-invitaciones-19 {
+    border: solid 3px #666;
+    background-color: blue;
+    height: 300px;
+
+} */
+
+/* #modalContainer{
+    display: block;
+}
+
+.colorLetras {
+    color: #732796;
+    font-weight: bolder;
+} */
+
+
+
+.resaltar {
+    list-style-type: ; /* Elimina los marcadores de lista predeterminados */
+    counter-reset: ; /* Reinicia el contador para cada lista */
+}
+
+/* .resaltar li:before {
+    /* content: ; /* Muestra el número del contador */
+    color: #732796; /* Cambia el color a azul, puedes ajustarlo según tus preferencias */
+    margin-right: 0.5em; /* Espaciado entre el número y el texto */
+    font-weight: bold; /* Hace que el número sea más visible */
+    display: inline-block; /* Alinea el número con el texto */
+} 
+
+.resaltar li {
+    counter-increment: ; /* Incrementa el contador para cada elemento de la lista */
+    margin-bottom: ; /* Añade un poco de espacio entre los elementos de la lista */
+}
+
+.container {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+/* .end{
+    text-align: center;
+}
+
+.blockMorado {
+    height: 75px;
+    background-color: #732796;
+}
+
+.text-white {
+    text-align: center;
+    font-size: 26px;
+}  */
