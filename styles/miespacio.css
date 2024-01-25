@@ -1,0 +1,20 @@
+/* .container-fluid{
+
+} */
+.mi-espacio{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column; */
+    margin: 20px;
+}
+.container{
+    border: solid black;
+    margin: 20px;
+}
+.row{
+    border: solid black;
+    margin: 20px;
+}
