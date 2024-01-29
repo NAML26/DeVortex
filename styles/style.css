@@ -12,7 +12,11 @@ main {
   height: 100vh;
 }
 
-
+a:hover{
+  /* background-color: #a47fb651; */
+  color: #262626;
+  text-shadow:rgba(115,39,150,1) 1px 1px;
+} 
 
 /* inician estilos de la barra de navegacion */
 header {
@@ -462,7 +466,8 @@ h3 {
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+  color: rgb(219, 41, 255);
+  text-decoration: line-through;
 }
 
 .pie-pagina .grupo-2 {
