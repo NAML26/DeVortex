@@ -1,0 +1,35 @@
+/*--------------- Inician estilos de contactanos --------------*/
+main {
+    height: 100vh;
+}
+.contactanos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contactanos-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px 7px rgba(115,39,150,1);
+}
+
+.formulario h1{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+/*  Terminan estilos de contacto*/
+
+@media screen and (max-width: 850px) {
+    .contactanos-formulario{
+    width: 90%;
+}
+}

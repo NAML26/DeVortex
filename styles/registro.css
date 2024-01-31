@@ -1,0 +1,196 @@
+/* inician estilos de la barra de navegacion */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ececec;
+}
+.logo {
+    max-width: 200px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #732796;
+} 
+
+.especial2 {
+    background-color: #732796;
+    color: white;
+    padding: 10px 40px;
+    margin: 0px;
+    border-radius: 10px;
+    
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+/*------------ Inician los media queries de la NavBar -----------*/
+
+@media screen and (max-width: 550px) {
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #732796;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #b99ee8;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+
+}
+
+.color-white{
+    color: white;
+}
+
+
+
+/*------------------- inician estilos de jumbotrom ---------------*/
+main {
+    height: 80vh;
+}
+
+/* --------------- Inician estilos de footer ------------------*/
+
+.pie-pagina {
+    width: 100%;
+    background-color: #732796;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #732796;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #480966;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:550px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    .informacion1 >img{
+        width: 200px;
+        height: 100px;
+        display: inline-block;
+    }
+}
+
+.box a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.box img {
+    background-color: #732796;
+}
+
+.fa {
+    font-size: 40px;
+}
