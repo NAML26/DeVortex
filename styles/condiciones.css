@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
+
+/*@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");*/
 
 main {
     height: auto;
     padding: 60px 40px;
+    font-family: 'Jaldi', sans-serif;
+
 }
 .container-fluid{
     border-radius: 15px;
@@ -19,5 +22,12 @@ h3, p {
     
 }
 
+
+img{
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
 
 

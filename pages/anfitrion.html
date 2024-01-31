@@ -20,6 +20,7 @@
         <!-- <script defer src="ruta/a/bootstrap.bundle.min.js"></script> -->
         <script defer src="/js/modal.js"></script>
         <script defer src="../js/anfitrion.js"></script>
+        <script defer src="../js/modal.js"></script>
         <title>Conviértete en Anfitrión</title>
 </head>
 <body>
@@ -39,53 +40,61 @@
         </nav>
         <!------------------------ NAVBAR ----------------------->
     </header>
-<main class="container-fluid">
-    <div class="row">
-        <div class="caja1 col-6 m-3 p-3">
-            <form>
-                <label>Tipo de Espacio</label>
-                <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
-                    <option selected>Selecciona un espacio</option>
-                    <option value="1">Salón</option>
-                    <option value="2">Jardín</option>
-                    <option value="3">Terraza</option>
-                  </select>
-                  <label>Capacidad</label>
-                <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
-                    <option selected>Selecciona una Capacidad máxima</option>
-                    <option value="1">50</option>
-                    <option value="2">100</option>
-                    <option value="3">200</option>
-                    <option value="3">300</option>
-                    <option value="3">400</option>
-                  </select>
-                <div class="mb-3">
-                  <label for="Direccion" class="form-label">Dirección</label>
-                  <input type="text" class="form-control" id="inputCalle">
-                  <div id="calleHelp" class="form-text">Calle y número</div>
-                </div>
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="inputAlcaldia">
-                    <div id="alcaldiaHelp" class="form-text">Alcaldía o Municipio</div>
-                  </div>
-                <div class="mb-3">
+<main> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container col-6 p-3">
+                <form class="form-anfitrion">
+                    <label>Tipo de Espacio</label>
+                    <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
+                        <option selected>Selecciona un espacio</option>
+                        <option value="1">Salón</option>
+                        <option value="2">Jardín</option>
+                        <option value="3">Terraza</option>
+                      </select>
+                      <label>Capacidad</label>
+                    <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
+                        <option selected>Selecciona una Capacidad máxima</option>
+                        <option value="1">50</option>
+                        <option value="2">100</option>
+                        <option value="3">200</option>
+                        <option value="3">300</option>
+                        <option value="3">400</option>
+                      </select>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="inputCiudad">
-                        <div id="ciudadHelp" class="form-text">Ciudad</div>
+                      <label for="Direccion" class="form-label">Dirección</label>
+                      <input type="text" class="form-control" id="inputCalle">
+                      <div id="calleHelp" class="form-text">Calle y número</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="inputAlcaldia">
+                        <div id="alcaldiaHelp" class="form-text">Alcaldía o Municipio</div>
                       </div>
                     <div class="mb-3">
-                  <label for="InputPrecio" class="form-label">Precio mínimo por persona</label>
-                  <input type="text" class="form-control" id="inputPrecio">
-                </div>
-                    <div class="mb-3">
-                    <label for="formFileMultiple" class="form-label">Sube tus fotos</label>
-                    <input class="form-control" type="file" id="inputFotos" multiple>
-                  </div>
-                <button type="submit" class="btn btn-primary">Anunciar Espacio</button>
-              </form>
-            <div class="caja2 col-6"></div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="inputCiudad">
+                            <div id="ciudadHelp" class="form-text">Ciudad</div>
+                          </div>
+                        <div class="mb-3">
+                      <label for="InputPrecio" class="form-label">Precio mínimo por persona</label>
+                      <input type="number" class="form-control" id="inputPrecio">
+                    </div>
+                        <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Sube tus fotos</label>
+                        <input class="form-control" type="file" id="inputFotos" multiple>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Anunciar Espacio</button>
+                  </form>
+               
+            </div>
+     
+        </div>
+        <div class="container caja-imagen col-6 ">
+        
         </div>
     </div>
+
+
 </main>
     <!-------------------------- FOOTER ------------------------>
 
