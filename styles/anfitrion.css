@@ -1,0 +1,13 @@
+
+.caja-imagen {
+    background-image: url(../assets/multimedia/lamparas.png);
+    background-size: cover;
+  background-position: center;
+  margin: none;
+}
+
+.form-anfitrion {
+    width: 100%;
+    padding: 20px;
+    margin: none;
+}

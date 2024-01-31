@@ -1,0 +1,16 @@
+/*Esto es una prueba*/
+
+{
+    "articulos": [
+      {
+        "inputCalle": "madero"
+      },
+      {
+        "inputCalle": "morelos"
+      },
+      {
+        "inputCalle": "zapata"
+      }
+
+    ]
+  }
