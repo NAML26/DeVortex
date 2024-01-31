@@ -1,26 +1,13 @@
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-    /* padding: 20px; */
-    /* border-radius: 15px; */
-
+.caja-imagen {
+    background-image: url(../assets/multimedia/lamparas.png);
+    background-size: cover;
+  background-position: center;
+  margin: none;
 }
 
-.container-fluid {
-    padding: 40px;
-}
-
-.caja1{
-    background-color: rgb(255, 255, 255);
-    height: auto;
-    /* border-radius: 15px;  */
-    box-shadow: 0px 0px 20px 3px rgba(115,39,150,1);
-}
-
-.caja2{
-    background-color: black;
+.form-anfitrion {
+    width: 100%;
+    padding: 20px;
+    margin: none;
 }
