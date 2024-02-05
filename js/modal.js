@@ -1,31 +1,41 @@
-/* const exampleModal = document.getElementById('exampleModal')
-if (exampleModal) {
-  exampleModal.addEventListener('show.bs.modal', event => {
-    /* Button that triggered the modal */
-   // const button = event.relatedTarget
-    /* Extract info from data-bs-* attributes */
-   // const recipient = button.getAttribute('data-bs-whatever')
-/*     If necessary, you could initiate an Ajax request here
-    and then do the updating in a callback. */
-/* 
-    Update the modal's content. */
- /*   const modalTitle = exampleModal.querySelector('.modal-title')
-    const modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-    modalTitle.textContent = `New message to ${recipient}`
-    modalBodyInput.value = recipient
-  })
-} */
-
 document.addEventListener('DOMContentLoaded', async function () {
   try {
-    const response = await fetch('modal.html');
-    if (!response.ok) {
-      throw new Error('Error al cargar el modal');
-    }
+      const response = await fetch('modal.html');
+      if (!response.ok) {
+          throw new Error('Error al cargar el modal');
+      }
 
-    const modalContent = await response.text();
-    document.getElementById('modalContainer').innerHTML = modalContent;
+      const modalContent = await response.text();
+      document.getElementById('modalContainer').innerHTML = modalContent;
+
+      const signupForm = document.querySelector('#signupForm');
+      signupForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const name = document.querySelector('#name').value;
+          const email = document.querySelector('#email').value;
+          const password = document.querySelector('#password').value;
+
+          const Users = JSON.parse(localStorage.getItem('users')) || [];
+          const isUserRegistered = Users.find(user => user.email === email);
+          if (isUserRegistered) {
+              return alert('El usuario ya está registrado!');
+          }
+
+          Users.push({ name: name, email: email, password: password });
+          localStorage.setItem('users', JSON.stringify(Users));
+          alert('Registro Exitoso!');
+          window.location.href = 'login.html';
+      });
+
+     
+      document.getElementById('ingresaLink').addEventListener('click', function () {
+          window.location.href = '../pages/login.html';
+      });
+  } catch (error) {
+      console.error(error);
+  }
+});
+
 
     // Después de cargar el modal, inicializa Bootstrap y otros scripts si es necesario
    // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
@@ -56,7 +66,3 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     //Evento para ocultar el modal al hacer clic en el botón correspondiente
     //hideButton.addEventListener('click', hideModal);
- } catch (error) {
-  console.error(error);
-  }
-});

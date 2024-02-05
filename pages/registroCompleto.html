@@ -57,25 +57,32 @@
             </div>
             <div class="col-8 p-3 div__formulario">
             <h1>¡Bienvenido a Lok'l!</h1>
-            <h2>Registrate para ser miembro de esta gran comunidad</h2>
+            <h2>Regístrate para ser miembro de esta gran comunidad</h2>
             <form>
                   <div class="container-fluid mb-3 div_nombre">
                     <label for="disabledTextInput" class="form-label"></label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre *">
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre*">
                   </div>
-                  <div class="mb-3 div_apellido">
+                  <div class="container-fluid mb-3 div_apellido">
                     <label for="disabledTextInput" class="form-label"></label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Apellido *">
-                  </div>
-                  <legend>Asegúrate que coincida con tu identificación</legend>
-                  <div class="mb-3 div_fecha_de_nacimiento">
-                    <label for="disabledSelect" class="form-label"></label>
-                    <select id="disabled" class="form-select">
-                      <option>Fecha de nacimiento</option>
-                    </select>
-                    <legend>Tenemos que asegurarnos que cumples con la mayoría de edad +18</legend>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Apellido*">
+                    <legend>Asegúrate que coincida con tu identificación.</legend>  
+                </div><br>
+                  <div class="container-fluid mb-3 div_fecha_de_nacimiento">
+                    <label for="disabledSelect" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" id="disabledTextInput" class="form-control" placeholder="Nombre*">
+                    <legend>Tenemos que asegurarnos que cumples con la mayoría de edad +18.</legend>
+                    </div>
+                    <div class="container-fluid mb-3 div_rfc">
+                    <label for="disabledTextInput" class="form-label"></label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="RFC*">  
+                </div>
+                <div class="container-fluid mb-3 div_phone">
+                    <label for="disabledTextInput" class="form-label">Teléfono</label>
+                    <input type="tel" id="disabledTextInput" class="form-control" placeholder="Teléfono*">  
+                </div>
                     <h3 class="separador">Ubicación</h3>
-                  </div>
+                 
                   <div class="container-fluid">
                     <div class="row">
                         <div class=" col-8 mb-3 div_estado">
@@ -113,8 +120,8 @@
                   
                   
                   
-                  <legend>Necesitamos contar con tu ubicación para ponerte en contacto con personas y LOKL’S cerca de ti</legend>
-                  <h3 class="separador">Correo</h3> 
+                  <legend>Necesitamos contar con tu ubicación para ponerte en contacto con personas y LOKL’S cerca de ti.</legend>
+                 <!--  <h3 class="separador">Correo</h3> 
                   <div class="mb-3 div_correo_electronico">
                     <label for="disabledTextInput" class="form-label"></label>
                     <input type="text" id="disabledTextInput" class="form-control" placeholder="Correo electrónico *">
@@ -125,7 +132,7 @@
                   </div>
                   <legend>- Tu contraseña no puede contener tu nombre o dirección de correo electrónico</legend>
                     <legend>- Al menos 8 caracteres</legend>
-                    <legend>- Contiene un número o símbolo</legend>
+                    <legend>- Contiene un número o símbolo</legend> -->
 
                     
                  
@@ -135,6 +142,7 @@
         </div>
     </div>
     </section>
+    <div id="modalContainer"></div>
 </body>
 
     <!-------------------------- FOOTER ------------------------>
@@ -143,12 +151,12 @@
         <div class="grupo-1">
             <div class="box">
                 <a href="#">Volver al inicio</a><br>
-                <a href="../pages/contactanos.html">Contactanos</a><br>
+                <a href="../pages/contactanos.html">Contáctanos</a><br>
                 <a href="../pages/acercadenosotros.html" >Acerca de nosotros</a><br>
                 <a href="../pages/condiciones.html">Condiciones legales</a>
             </div>
             <div class="box">
-                <h2>SIGUENOS</h2>
+                <h2>SÍGUENOS</h2>
                 <div class="red-social">
                     <a href="#" class="fa"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" class="fa"><i class="fa-brands fa-facebook"></i></a>
