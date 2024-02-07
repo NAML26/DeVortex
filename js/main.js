@@ -10,6 +10,7 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
 
+
 /****************************Inicio Página invitaciones****************************/
 
 document.getElementById("crear-invitacion").addEventListener('click', function() {
