@@ -55,6 +55,28 @@ function mostrarDatos() {
   }
 /****************************Término Página invitaciones****************************/
 
+/****************Insertar lugares******************/
+/* const lugaresContainer = document.getElementById("lugaresContainer");
 
+const lugares = [haciendaSanFernando, salonMoezllonz, salonLienzo, centroVeracruzanoCoyoacan, salonAquiahuac];
 
-   
+lugares.forEach(lugar => {
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  card.innerHTML = `
+    <h2>${lugar.nombre}</h2>
+    <p>Precio: $${lugar.precio}</p>
+    <p>Capacidad: ${lugar.capacidad}</p>
+    <p>Ubicación: ${lugar.ubicacion}</p>
+  `;
+
+  lugaresContainer.appendChild(card);
+}); */
+
+/*const registro = document.getElementById('toRegistroCompleto');
+registro.addEventListener('click', (e) =>{
+  e.preventDefault()
+  window.location.href = '../registroCompleto.html'
+}); 
+llamar registro completo con el boton de anunciar espacio*/

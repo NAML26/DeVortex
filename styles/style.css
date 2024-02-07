@@ -1,11 +1,15 @@
 /* Estilos generales */
 @import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
 
+
+/* FUENTES LETRA
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family:  'Jaldi', sans-serif;
 }
 
 main {
@@ -16,7 +20,7 @@ a:hover{
   /* background-color: #a47fb651; */
   color: #262626;
   text-shadow:rgba(115,39,150,1) 1px 1px;
-} 
+}
 
 /* inician estilos de la barra de navegacion */
 header {
@@ -41,6 +45,9 @@ header {
 .nav-list li a {
   text-decoration: none;
   color: #732796;
+  font-size: 22px;
+  font-weight: bolder;
+
 }
 
 .especial2 {
@@ -50,6 +57,7 @@ header {
   margin: 0px;
   border-radius: 10px;
   border: none;
+  font-family:'Quicksand', sans-serif;
 }
 .abrir-menu,
 .cerrar-menu {
@@ -127,6 +135,7 @@ header {
 
 .color-white {
   color: white;
+
 }
 
 /*------------------- inician estilos de jumbotrom ---------------*/
@@ -302,6 +311,14 @@ h3 {
         margin: 10px;
         text-align: center;
         height: 350px;
+        
+    }
+    .nav-list li a {
+      text-decoration: none;
+      color: #732796;
+      font-size: 18px;
+      font-weight: bolder;
+
     }
 }
 

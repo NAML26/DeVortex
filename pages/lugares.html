@@ -15,9 +15,11 @@
     <script defer src="../js/main.js"></script>
     <script defer src="../js/modal.js"></script>
     <script defer src="../js/basedatos/lugares.js"></script>
+    <link rel="stylesheet" href="../styles/lugares.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
     <title>Lugares</title>
   </head>
-<body>
   <header>
     <a href="../index.html"> <img class="logo" src="../assets/multimedia/lokl-logo.png" alt="log"/> </a>
     <button class="abrir-menu" id="abrir">Abrir</button>
@@ -32,8 +34,501 @@
       </ul>
     </nav>
   </header>
-<main>
-  <div id="modalContainer"></div>
+  <!-- <div class="titulo_lugares">
+  <h1>Lugares</h1>
+    </div> -->
+<main class="d-flex justify-content-center align-items-center">
+  <head><div id="modalContainer"></div></head>
+  <div id="lugaresContainer"></div>
+  <body>
+    <section class="normal">
+      <div class="container">
+          <div class="card" style="width: 22rem">
+              <div>
+                  <img src="/assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1"> 
+              </div>
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b class="tituloLugar">Salón Luzcina.</b>
+                      <br>
+                      Xinacatla, Puebla
+                  </h5>
+                  <p class="card-text">
+                      Precio: $900
+                      <br>
+                      No. Invitados: 100-500
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b class="tituloLugar">Salón Xelhua.</b>
+                      <br>
+                      Cholula, Puebla
+                  </h5>
+                  <p class="card-text">
+                      Precio $750
+                      <br>
+                      N° de invitados 200 - 250
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b class="tituloLugar">Salón Aquiahuac</b>
+                      <br>
+                      Acatepec, Puebla
+                  </h5>
+                  <p class="card-text">
+                      Precio $650
+                      <br>
+                      N° de invitados 150 - 200
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+      </div>
+  </section>
+  <!-- inicia especial -->
+  <section class="espera">
+      <div class="container">
+          <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="card">
+                          <div class="card" style="width: 22rem;">
+                              <div>
+                                  <img src="/assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1">
+                              </div>
+                              <div class="texto--lugares">
+                                  <h5 class="card-title">
+                                      <b class="tituloLugar">Salón Luzcina2222.</b>
+                                      <br>
+                                      Xinacatla, Puebla
+                                  </h5>
+                                  <p class="card-text">
+                                      Precio: $900
+                                      <br>
+                                      No. Invitados: 100-500
+                                  </p>
+                              </div>
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">
+                                      Quiero más información
+                                  </a>
+                              </div>
+                          </div><!-- Contenido de la primera tarjeta -->
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card" style="width: 22rem;">
+                              <img src="/assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
+                              <div class="texto--lugares">
+                                  <h5 class="card-title">
+                                      <b class="tituloLugar">Salón Xelhua.</b>
+                                      <br>
+                                      Cholula, Puebla
+                                  </h5>
+                                  <p class="card-text">
+                                      Precio $750
+                                      <br>
+                                      N° de invitados 200 - 250
+                                  </p>
+                              </div>
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">
+                                      Quiero más información
+                                  </a>
+                              </div>
+                          </div><!-- Contenido de la segunda tarjeta -->
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card" style="width: 22rem;">
+                              <img src="/assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
+                              <div class="texto--lugares">
+                                  <h5 class="card-title">
+                                      <b class="tituloLugar">Salón Aquiahuac</b>
+                                      <br>
+                                      Acatepec, Puebla
+                                  </h5>
+                                  <p class="card-text">
+                                      Precio $650
+                                      <br>
+                                      N° de invitados 150 - 200
+                                  </p>
+                              </div>
+                              <div class="card-body">
+                                  <a href="#" class="btn btn-primary">
+                                      Quiero más información
+                                  </a>
+                              </div>
+                          </div>
+                      </div><!-- Contenido de la tercera tarjeta -->
+                      </div>
+                  </div>
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+              </button> -->
+          </div>             
+  </section>
+  <!-- termina especial -->
+  <!------------------------ 2da sección LUGARES ----------------->
+
+  <section class="normal">
+      <div class="container">
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b>Lienzo Charro del Pedregal</b>
+                      <br>
+                      Tlalpan, Ciudad de México
+                  </h5>
+                  <p class="card-text">
+                      Precio $1.050
+                      <br>
+                      N° de invitados 80 - 700
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b>Moezllonz Jardín</b>
+                      <br>
+                      Xochimilco, Ciudad de México
+                  </h5>
+                  <p class="card-text">
+                      Precio $790
+                      <br>
+                      N° de invitados 100 - 1,000
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b>Centro Veracruzano Coyoacán</b>
+                      <br>
+                      Coyoacán, Ciudad de México
+                  </h5>
+                  <p class="card-text">
+                      Precio $740
+                      <br>
+                      N° de invitados 100 - 800
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+      </div>
+  </section>
+  <!-- inicia especial -->
+  <section class="espera">
+      <div class="container">
+      <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <!-- Contenido de la primera tarjeta -->
+              <div class="carousel-item active">
+                  <div class="card">
+                      <div class="card" style="width: 22rem;">
+                          <img src="/assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
+                          <div class="texto--lugares">
+                              <h5 class="card-title">
+                                  <b>Lienzo Charro del Pedregal</b>
+                                  <br>
+                                  Tlalpan, Ciudad de México
+                              </h5>
+                              <p class="card-text">
+                                  Precio $1.050
+                                  <br>
+                                  N° de invitados 80 - 700
+                              </p>
+                          </div>
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">
+                                  Quiero más información
+                              </a>
+                          </div>
+                      </div>
+      
+                  </div>
+              </div>
+              <!-- Contenido de la segunda tarjeta -->
+              <div class="carousel-item">
+                  <div class="card">
+                      <div class="card" style="width: 22rem;">
+                          <img src="/assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
+                          <div class="texto--lugares">
+                              <h5 class="card-title">
+                                  <b>Moezllonz Jardín</b>
+                                  <br>
+                                  Xochimilco, Ciudad de México
+                              </h5>
+                              <p class="card-text">
+                                  Precio $790
+                                  <br>
+                                  N° de invitados 100 - 1,000
+                              </p>
+                          </div>
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">
+                                  Quiero más información
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Contenido de la tercera tarjeta -->
+              <div class="carousel-item">
+                  <div class="card">
+                      <div class="card" style="width: 22rem;">
+                          <img src="/assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
+                          <div class="texto--lugares">
+                              <h5 class="card-title">
+                                  <b>Centro Veracruzano Coyoacán</b>
+                                  <br>
+                                  Coyoacán, Ciudad de México
+                              </h5>
+                              <p class="card-text">
+                                  Precio $740
+                                  <br>
+                                  N° de invitados 100 - 800
+                              </p>
+                          </div>
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">
+                                  Quiero más información
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <!-- <button class="" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+              <span class="" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+              <span class="" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+          </button> -->
+      </div>
+  </div>
+  </section>
+    <!-- Tercera seccion -->
+  <section class="normal">
+      <div class="container">
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b>Terraza Dante</b>
+                      <br>
+                      Miguel Hidalgo, Ciudad de México
+                  </h5>
+                  <p class="card-text">
+                    12500 - 32500
+                      <br>
+                      N° de invitados 80 
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 22rem;">
+              <img src="/assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                  <h5 class="card-title">
+                      <b>Terraza Medellin</b>
+                      <br>
+                      Cuauhtemoc, Ciudad de México
+                  </h5>
+                  <p class="card-text">
+                      Precio $19500 - 22500
+                      <br>
+                      N° de invitados 50
+                  </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+          <div class="card" style="width: 22rem;">
+              <img src="../assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
+              <div class="texto--lugares">
+                <h5 class="card-title">
+                    <b>Terraza Napoles</b>
+                    <br>
+                    Benito Juarez, Ciudad de México
+                </h5>
+                <p class="card-text">
+                    27500 - 53000
+                    <br>
+                    N° de invitados 200 
+                </p>
+              </div>
+              <div class="card-body">
+                  <a href="#" class="btn btn-primary">
+                      Quiero más información
+                  </a>
+              </div>
+          </div>
+
+      </div>
+  </section>
+  <!-- inicia especial -->
+  <section class="espera">
+      <div class="container">
+      <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <!-- Contenido de la primera tarjeta -->
+              <div class="carousel-item active">
+                  <div class="card">
+                      <div class="card" style="width: 22rem;">
+                          <img src="/assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
+                          <div class="texto--lugares">
+                            <h5 class="card-title">
+                                <b>Terraza Dante</b>
+                                <br>
+                                Miguel Hidalgo, Ciudad de México
+                            </h5>
+                            <p class="card-text">
+                              12500 - 32500
+                                <br>
+                                N° de invitados 80 
+                            </p>
+                          </div>
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">
+                                  Quiero más información
+                              </a>
+                          </div>
+                      </div>
+      
+                  </div>
+              </div>
+              <!-- Contenido de la segunda tarjeta -->
+              <div class="carousel-item">
+                  <div class="card">
+                      <div class="card" style="width: 22rem;">
+                          <img src="/assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
+                          <div class="texto--lugares">
+                            <h5 class="card-title">
+                                <b>Terraza Medellin</b>
+                                <br>
+                                Cuauhtemoc, Ciudad de México
+                            </h5>
+                            <p class="card-text">
+                                Precio $19500 - 22500
+                                <br>
+                                N° de invitados 50
+                            </p>
+                          </div>
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">
+                                  Quiero más información
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Contenido de la tercera tarjeta -->
+              <div class="carousel-item">
+                  <div class="card">
+                      <div class="card" style="width: 22rem;">
+                          <img src="../assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
+                          <div class="texto--lugares">
+                            <h5 class="card-title">
+                                <b>Terraza Napoles</b>
+                                <br>
+                                Benito Juarez, Ciudad de México
+                            </h5>
+                            <p class="card-text">
+                                27500 - 53000
+                                <br>
+                                N° de invitados 200 
+                            </p>
+                          </div>
+                          <div class="card-body">
+                              <a href="#" class="btn btn-primary">
+                                  Quiero más información
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <!-- <button class="" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+              <span class="" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+              <span class="" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+          </button> -->
+      </div>
+  </div>
+  </section>  
+  </body>
+
 </main>
 <footer class="pie-pagina">
   <div class="grupo-1">
@@ -46,10 +541,10 @@
     <div class="box">
       <h2>SÍGUENOS</h2>
       <div class="red-social">
-        <a href="#" class="fa"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="fa"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class="fa"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#" class="fa"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/" target=_blank class="fa"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target=_blank class="fa"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.twitter.com/" target=_blank class="fa"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/" target=_blank class="fa"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
     <div class="box">
@@ -64,6 +559,4 @@
     <small>&copy; 2024 <b></b> - Todos los Derechos Reservados.</small>
   </div>
 </footer>
-</body>
-
 </html>

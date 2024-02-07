@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
+
+
+
 .invi-main {
-  height: 100vh;
+  height: 433vh;
+  margin-bottom: 20px;
 }
 
 
@@ -124,6 +131,10 @@ justify-content: center;
    
   } 
 
+
+  footer {
+    margin-top: 20px;
+  }
 
 
 

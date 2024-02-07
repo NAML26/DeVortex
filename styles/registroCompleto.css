@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 .sccs{
     background-color: #732796;
-    height: 100px;
+    height: 50px;
 }
 
 .container-fluid__row__imagencentrada{
@@ -9,7 +12,7 @@
 
 .caja1{
     background-color: coral;
-    background-image: ;
+   /*  background-image: ; */
     height: 300px;
 }
 

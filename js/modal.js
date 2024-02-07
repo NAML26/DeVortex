@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function () {
   try {
-      const response = await fetch('modal.html');
+      const response = await fetch('../pages/modal.html' || 'modal.html');
       if (!response.ok) {
           throw new Error('Error al cargar el modal');
       }

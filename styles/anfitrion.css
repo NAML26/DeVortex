@@ -1,13 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
+
+.sccs{
+  background-color: #732796;
+  height: 50px;
+}
+
 
 .caja-imagen {
     background-image: url(../assets/multimedia/lamparas.png);
     background-size: cover;
-  background-position: center;
-  margin: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 .form-anfitrion {
     width: 100%;
     padding: 20px;
     margin: none;
+}
+
+#toRegistroCompleto > a{
+text-decoration: none;
+color: white;
+}
+
+@media screen and (max-width: 550px) {
+  div.container.caja-imagen {
+     display: none; 
+ }
+
+div.container.col-6.p-3 {
+  width: 100%;
+}
+
 }

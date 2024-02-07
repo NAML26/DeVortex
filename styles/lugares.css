@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
+
+.titulo_lugares {
+  text-align: center;
+  margin: 2px;
+  font-size: 50px;
+  color: #732796;
+  text-shadow: 4px 4px 8px #b99ee8;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
