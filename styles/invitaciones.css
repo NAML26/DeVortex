@@ -1,4 +1,4 @@
-main {
+.invi-main {
   height: 100vh;
 }
 
@@ -51,7 +51,7 @@ main {
 } 
 
 .blockMorado {
-    height: 75px;
+    height: 90px;
     background-color: #732796;
 }
 

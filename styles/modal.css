@@ -16,6 +16,7 @@ h1 {
 .ingresa {
     color: #732796;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .fa-google {
