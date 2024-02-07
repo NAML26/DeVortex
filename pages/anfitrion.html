@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/modal.css">
-        <link rel="stylesheet" href="../styles/anfitrion.css">
+        
         <link rel="shortcut icon" href="../assets/multimedia/icon2.svg" type="image/x-icon">
         <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,8 +20,9 @@
         <!-- <script defer src="ruta/a/bootstrap.bundle.min.js"></script> -->
         <script defer src="/js/modal.js"></script>
         <script defer src="../js/anfitrion.js"></script>
-        <script defer src="../js/modal.js"></script>
+   
         <title>Conviértete en Anfitrión</title>
+        <link rel="stylesheet" href="../styles/anfitrion.css">
 </head>
 <body>
     <header>
@@ -40,11 +41,17 @@
         </nav>
         <!------------------------ NAVBAR ----------------------->
     </header>
-<main> 
+<main class="anfi-main"> 
     <div class="container-fluid">
         <div class="row">
+            <div class="col-12 sccs ">
+            </div>
             <div class="container col-6 p-3">
                 <form class="form-anfitrion">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputCalle">
+                      </div>
                     <label>Tipo de Espacio</label>
                     <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
                         <option selected>Selecciona un espacio</option>
@@ -61,10 +68,23 @@
                         <option value="3">300</option>
                         <option value="3">400</option>
                       </select>
-                    <div class="mb-3">
-                      <label for="Direccion" class="form-label">Dirección</label>
-                      <input type="text" class="form-control" id="inputCalle">
-                      <div id="calleHelp" class="form-text">Calle y número</div>
+                      <div class="mb-3">
+                        <label for="Direccion" class="form-label">Dirección</label>
+                        <div class="col">
+                            <input type="text" class="form-control" id="inputCalle">
+                            <div id="calleHelp" class="form-text">Calle</div>
+                        </div>
+                        <div class="row calle-numero">
+                            
+                            <div class="col">
+                                <input type="text" class="form-control" id="inputNumero">
+                                <div id="numeroHelp" class="form-text">No. ext</div>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="inputNumero">
+                                <div id="numeroHelp" class="form-text">No. int</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="mb-3">
                         <input type="text" class="form-control" id="inputAlcaldia">
@@ -73,7 +93,11 @@
                     <div class="mb-3">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="inputCiudad">
-                            <div id="ciudadHelp" class="form-text">Ciudad</div>
+                            <div id="ciudadHelp" class="form-text">Estado</div>
+                          </div>
+                          <div class="mb-3">
+                            <input type="text" class="form-control" id="inputCiudad">
+                            <div id="ciudadHelp" class="form-text">Código Postal</div>
                           </div>
                         <div class="mb-3">
                       <label for="InputPrecio" class="form-label">Precio mínimo por persona</label>
@@ -83,16 +107,16 @@
                         <label for="formFileMultiple" class="form-label">Sube tus fotos</label>
                         <input class="form-control" type="file" id="inputFotos" multiple>
                       </div>
-                    <button type="submit" class="btn btn-primary">Anunciar Espacio</button>
+                    <button id="toRegistroCompleto" type="submit" class="btn btn-primary"><a href="./registroCompleto.html">Anunciar Espacio</a></button>
                   </form>
                
             </div>
      
         </div>
         <div class="container caja-imagen col-6 ">
-        
         </div>
     </div>
+    
 
     <div id="modalContainer"></div>
 </main>
@@ -109,10 +133,10 @@
             <div class="box">
                 <h2>SÍGUENOS</h2>
                 <div class="red-social">
-                    <a href="#" class="fa"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="fa"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="fa"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" class="fa"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/" target=_blank class="fa"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target=_blank class="fa"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target=_blank class="fa"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target=_blank class="fa"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
             <div class="box">

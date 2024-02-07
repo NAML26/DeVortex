@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
+
 /* Estilos generales */
-@import url("https://fonts.googleapis.com/css2?family=Jaldi&display=swap");
+
 .btn-signup {
     width: 130px;
     height: 42px;

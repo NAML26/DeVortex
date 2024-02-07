@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 /*--------------- Inician estilos de contactanos --------------*/
 main {
     height: 100vh;
 }
 .contactanos{
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,10 +14,20 @@ main {
     height: 100vh;
 }
 
+.imagen {
+    background-image: url(/assets/multimedia/bar.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contactanos-formulario{
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 30px;
     width: 60%;
     height: auto;
     padding: 20px;
