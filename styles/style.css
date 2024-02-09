@@ -13,7 +13,7 @@
 }
 
 main {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 a:hover{
@@ -140,7 +140,7 @@ header {
 
 /*------------------- inician estilos de jumbotrom ---------------*/
 main {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .imagen1 p {
