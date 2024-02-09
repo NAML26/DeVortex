@@ -31,15 +31,18 @@
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="col-form-label">Contraseña</label>
-                                <input class="form-control" id="password" placeholder="************" required>
+                                <input type="password"class="form-control" id="password" placeholder="************" title="La contraseña debe tener al menos 6 caracteres y contener al menos un número, una letra y un símbolo." required>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">Confirmar contraseña</label>
+                                <input type="password"class="form-control" id="confirmacion" placeholder="************" required><br>
+                                <div id="error-message-signup" style="color: red; text-align: center;"></div>
                             </div>
                             <p>¿Ya tienes una cuenta? <span class="ingresa" id="ingresaLink">Ingresa aquí.</span></p>
-                          <!--   <p>O regístrate con tu cuenta de Google</p> -->
-                           <!--  <i class="fa-brands fa-google"></i> -->
                            <div class="modal-footer">
                             <button type="submit" class="btn-signup">Registrarse</button>
                         </div>
                         </form>
+                    
                     </div>
                     
                 </div>

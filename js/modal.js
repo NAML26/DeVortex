@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function () {
   try {
-      const response = await fetch('../pages/modal.html' || 'modal.html');
+      const response = await fetch('../pages/modal.html');
       if (!response.ok) {
           throw new Error('Error al cargar el modal');
       }
@@ -9,24 +9,37 @@ document.addEventListener('DOMContentLoaded', async function () {
       document.getElementById('modalContainer').innerHTML = modalContent;
 
       const signupForm = document.querySelector('#signupForm');
+      const errorMessages = document.querySelector('#error-message-signup');
       signupForm.addEventListener('submit', function (e) {
           e.preventDefault();
           const name = document.querySelector('#name').value;
           const email = document.querySelector('#email').value;
           const password = document.querySelector('#password').value;
+          const confirmPassword = document.querySelector('#confirmacion').value;
+
+          const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+          if (!passwordRegex.test(password)) {
+              errorMessages.textContent = 'La contraseña debe contener al menos 6 carácteres, un símbolo, y un número.';
+              return;
+          }
+
+          else if (password !== confirmPassword) {
+            errorMessages.textContent = 'Las contraseñas no coinciden.';
+            return;
+        }
 
           const Users = JSON.parse(localStorage.getItem('users')) || [];
           const isUserRegistered = Users.find(user => user.email === email);
           if (isUserRegistered) {
-              return alert('El usuario ya está registrado!');
+            errorMessages.textContent = 'Ya existe un usuario registrado con ese correo.';
+         return;
           }
 
           Users.push({ name: name, email: email, password: password });
           localStorage.setItem('users', JSON.stringify(Users));
           alert('Registro Exitoso!');
-          window.location.href = 'login.html';
+          window.location.href = '../pages/login.html';
       });
-
      
       document.getElementById('ingresaLink').addEventListener('click', function () {
           window.location.href = '../pages/login.html';
@@ -35,34 +48,3 @@ document.addEventListener('DOMContentLoaded', async function () {
       console.error(error);
   }
 });
-
-
-    // Después de cargar el modal, inicializa Bootstrap y otros scripts si es necesario
-   // var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-
-    // Mostrar el modal
-    // function showModal() {
-     /*  myModal.show(); */
-    //  document.getElementById("modalContainer").style.display = "block";
-      //
-      //
-      //
-      //
-      //acciones para registro
-  //  } 
-
-    // Ocultar el modal
-  //  function hideModal() {
-      /* myModal.hide(); */
-    //  document.getElementById("modalContainer").style.display = "none";
-    //}
-
-    // Asignar eventos a los botones u otros elementos para mostrar y ocultar el modal
-   //var showButton = document.getElementById('showModalButton'); // Reemplaza 'showModalButton' con el ID de tu botón para mostrar el modal
-    //var hideButton = document.getElementById('hideModalButton'); // Reemplaza 'hideModalButton' con el ID de tu botón para ocultar el modal
-
-    // Evento para mostrar el modal al hacer clic en el botón correspondiente
-    //showButton.addEventListener('click', showModal);
-
-    //Evento para ocultar el modal al hacer clic en el botón correspondiente
-    //hideButton.addEventListener('click', hideModal);

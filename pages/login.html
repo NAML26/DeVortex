@@ -15,9 +15,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script defer src="../js/modal.js"></script>
     <script defer src="../js/login.js"></script>
   <script defer src="../js/main.js"></script>
-  <script defer src="../js/modal.js"></script>
   
   <title>Login</title>
 </head>
@@ -33,8 +33,7 @@
         <li><a href="../pages/eventos.html">Eventos</a></li>
         <li><a href="../pages/invitaciones.html">Invitaciones</a></li>
         <li><a href="../pages/miespacio.html">Mi Lok'l</a></li>
-        <li><a Href="../pages/acercadenosotros.html" class="especial2" data-bs-toggle="modal"
-            data-bs-target="#exampleModal"><span class="color-white">Regístrate</span></a></li>
+        <li><a Href="../pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Registrarse</span></a></li>
       </ul>
     </nav>
   </header>
@@ -46,15 +45,17 @@
           <h1>Iniciar sesión</h1><br>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label" >Correo electrónico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required autofocus>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required autofocus>
             <!--   <div id="emailHelp" class="form-text">Ingresa tu correo electrónico.</div> -->
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" required>
+            <input type="password" class="form-control" id="password" required>
           </div>
+          <div id="error-message" style="color: red;"></div><br>
           <button type="submit" class="especial2">Acceder</button>
         </form>
+        
       </div>
       <div class="container caja-imagen2 col-12 col-sm-6">
         <h2 class="oculto">¡Únete a esta gran comunidad!</h2>
@@ -62,6 +63,7 @@
       </div>
     </div>
     </div>
+
 <div id="modalContainer"></div>
   </main>
  
