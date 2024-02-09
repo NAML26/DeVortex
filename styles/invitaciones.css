@@ -137,5 +137,9 @@ justify-content: center;
     margin-top: 20px;
   }
 
+  #linkContactanos > a {
+   /*  text-decoration: none; */
+    color:white;
+  }
 
 
