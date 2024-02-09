@@ -3,6 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/modal.css">
@@ -37,6 +38,7 @@
                 <li><a href="/pages/invitaciones.html">Invitaciones</a></li>
                 <li><a href="/pages/miespacio.html">Mi Lok'l</a></li>
                 <li><a href="/pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+                <li><a href="../pages/login.html"><i class="material-icons">logout</i></a></li>
             </ul>
         </nav>
         <!------------------------ NAVBAR ----------------------->
@@ -48,10 +50,25 @@
             </div>
             <div class="container col-6 p-3">
                 <form class="form-anfitrion">
+                    <h1>Completa la información de tu espacio</h1>
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="inputCalle">
                       </div>
+                      <div class="mb-3">
+                        
+                        <div class="row calle-numero">
+                            
+                            <div class="col">
+                                <input type="date" class="form-control" id="inputFecha">
+                                <div id="numeroHelp" class="form-text">Fecha</div>
+                            </div>
+                            <div class="col">
+                                <input type="time" class="form-control" id="inputHora">
+                                <div id="numeroHelp" class="form-text">Hora</div>
+                            </div>
+                        </div>
+                    </div>
                     <label>Tipo de Espacio</label>
                     <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
                         <option selected>Selecciona un espacio</option>
