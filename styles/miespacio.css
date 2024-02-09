@@ -5,6 +5,10 @@
 /* .container-fluid{
 
 } */
+
+#lokl-main {
+    height: 100vh;
+}
 .mi-espacio{
     /* display: flex;
     justify-content: center;
@@ -21,4 +25,27 @@
 .row{
     border: solid black;
     margin: 20px;
+}
+
+div.back {
+    margin-top: 60px;
+    background-image: url(../assets/multimedia/loklBack.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+}
+
+#especial2 {
+    margin: 30px;
+    padding: 20px;
+    background-color: #732796;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+#especial2 > a{
+text-decoration: none;
+color: white;
 }
