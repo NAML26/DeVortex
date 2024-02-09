@@ -23,29 +23,31 @@
     margin: 20px;
 }
 .row{
-    border: solid black;
-    margin: 20px;
-}
-
-div.back {
-    margin-top: 60px;
-    background-image: url(../assets/multimedia/loklBack.JPG);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 100%;
+   /*  border: solid black; */
+ /*    margin: 20px; */
 }
 
 #especial2 {
     margin: 30px;
-    padding: 20px;
+    padding: 15px;
     background-color: #732796;
     text-decoration: none;
     border-radius: 10px;
+    border: none;
+    font-weight: bold;
 
 }
 #especial2 > a{
 text-decoration: none;
 color: white;
+}
+
+.imagen__simulada{
+    width: 100%;
+    height: 75vh;
+    /* Estos son los estilos para las imagenes */
+    background-image: url(/assets/multimedia/loklBack.JPG);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }

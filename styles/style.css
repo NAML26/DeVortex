@@ -58,6 +58,7 @@ header {
   border-radius: 10px;
   border: none;
   font-family:'Quicksand', sans-serif;
+font-weight: bold;
 }
 .abrir-menu,
 .cerrar-menu {
@@ -113,6 +114,7 @@ header {
     background-color: #b99ee8;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 9999;
   }
 
   .nav.visible {
@@ -123,6 +125,7 @@ header {
   .nav-list {
     flex-direction: column;
     align-items: left;
+    z-index: 9999;
   }
 
   .nav-list li a {
@@ -351,7 +354,7 @@ h3 {
         height: 400px !important;
     }
     main {
-        height: 60vh;
+        /* height: 60vh; */
     }
     .contactanos-formulario {
         width: 100%;
