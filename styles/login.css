@@ -49,7 +49,7 @@
      align-items: center; 
     } 
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 575px) {
          div.container.caja-imagen2 {
             display: none; 
         }
