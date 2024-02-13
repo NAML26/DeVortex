@@ -2,6 +2,8 @@ const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
+
+
 abrir.addEventListener("click", () => {
   nav.classList.add("visible");
 });
@@ -84,3 +86,19 @@ registro.addEventListener('click', (e) =>{
   window.location.href = '../registroCompleto.html'
 }); 
 llamar registro completo con el boton de anunciar espacio*/
+
+// const lugaresContainer = document.getElementById("lugaresContainer");
+
+// lugares.forEach(lugar => {
+//   const card = document.createElement("div");
+//   card.classList.add("card");
+
+//   card.innerHTML = `
+//     <h2>${lugar.nombre}</h2>
+//     <p>Precio: $${lugar.precio}</p>
+//     <p>Capacidad: ${lugar.capacidad}</p>
+//     <p>Ubicación: ${lugar.ubicacion}</p>
+//   `;
+
+//   lugaresContainer.appendChild(card);
+// });

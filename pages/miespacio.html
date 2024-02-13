@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/miespacio.css"> <!--css propio de miespacio.html-->
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/miespacio.css"> <!--css propio de lugares.html-->
     <link rel="shortcut icon" href="../assets/multimedia/icon2.svg" type="image/x-icon">
     <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -28,21 +29,27 @@
         <li><a href="../pages/invitaciones.html">Invitaciones</a></li>
         <li><a href="../pages/miespacio.html">Mi Lok'l</a></li>
         <li><a href="../pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+        <li><a href="../pages/login.html"><i class="material-icons">logout</i></a></li>
       </ul>
     </nav>
   </header>
-<main>
-  
-  <div class="modoAnfitrion">
-<!--Botón que conecte con Anfitrion-->
-<a href="./anfitrion.html">Conviertete en un Anfitrión</a>
-<br>
-<a href="./registroCompleto.html">Registro ultra super secreto</a>
-  </div>
-  <div class="espaciosFav">
+<main id="lokl-main">
+  <!-- <div class="modoAnfitrion">  -->
+    <!--Botón que conecte con Anfitrion-->
+    <button id="especial2"><a  href="./anfitrion.html">Conviértete en un Anfitrión</a></button>
+    <!-- <br> -->
+    <!-- <a href="./registroCompleto.html">Registro ultra super secreto</a> -->
+      <!-- </div> -->
+  <!-- <div class="back">
+  <div class="espaciosFav"> -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="imagen__simulada col-12"></div>
+      </div>
+    </div>
 
   </div>
-  
+</div>
 </main>
 <div id="modalContainer"></div>
 <footer class="pie-pagina">
