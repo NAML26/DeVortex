@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 
-/* .container-fluid{
-
-} */
 
 #lokl-main {
     height: 100vh;
@@ -21,10 +18,6 @@
 .container{
     border: solid black;
     margin: 20px;
-}
-.row{
-   /*  border: solid black; */
- /*    margin: 20px; */
 }
 
 #especial2 {
@@ -45,6 +38,7 @@ color: white;
 .imagen__simulada{
     width: 100%;
     height: 75vh;
+
     /* Estos son los estilos para las imagenes */
     background-image: url(/assets/multimedia/loklBack.JPG);
     background-size: contain;

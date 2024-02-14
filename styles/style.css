@@ -120,6 +120,7 @@ font-weight: bold;
   .nav.visible {
     opacity: 1;
     visibility: visible;
+    z-index: 999;
   }
 
   .nav-list {

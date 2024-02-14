@@ -1,18 +1,26 @@
 const loginForm = document.querySelector('#loginForm')
 const errorMessage = document.querySelector('#error-message');
+
 loginForm.addEventListener('submit', (e)=>{
-    e.preventDefault()
+    e.preventDefault();
+
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
-    const Users = JSON.parse(localStorage.getItem('users')) || []
-    const validUser = Users.find(user => user.email === email && user.password === password)
-    if(!validUser){
-        errorMessage.textContent = 'Usuario y/o contraseña incorrecto'; // Actualiza el mensaje de error
-        return;
-    }
-    alert(`Bienvenido ${validUser.name}`)
-    localStorage.setItem('login_success', JSON.stringify(validUser))
-    window.location.href = '../index.html'   
+    const url = `http://localhost:8080/admin/users/byEmail?email=${email}`;
 
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        if (data.correo === email && data.contrasena === password){
+            alert(`Bienvenido ${data.correo}`)
+            window.location.href = '../index.html' 
+        } else if (data.correo === email && data.contrasena != password){
+            errorMessage.textContent = 'Usuario y/o contraseña incorrectos';
+        }
+    })
+    .catch(error => {
+        console.error(error, 'Usuario no encontrado');
+        errorMessage.textContent = 'Usuario y/o contraseña incorrectos';
+    })
 })
 
