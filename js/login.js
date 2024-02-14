@@ -1,15 +1,3 @@
-const loginForm = document.querySelector('#loginForm')
-loginForm.addEventListener('submit', (e)=>{
-    e.preventDefault()
-    const email = document.querySelector('#email').value
-    const password = document.querySelector('#password').value
-    const Users = JSON.parse(localStorage.getItem('users')) || []
-    const validUser = Users.find(user => user.email === email && user.password === password)
-    if(!validUser){
-        return alert('Usuario y/o contraseña incorrectos!')
-    }
-    alert(`Bienvenido ${validUser.name}`)
-    localStorage.setItem('login_success', JSON.stringify(validUser))
-    window.location.href = '../index.html'   
-
-})
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c4530eacd980c9a1230b50a4bf77ea17b8ebca94b58622e7da476bc65e9a115
+size 983

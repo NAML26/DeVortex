@@ -5,7 +5,7 @@
 
 
 .invi-main {
-  height: 433vh;
+  /* height: 433vh; */
   margin-bottom: 20px;
 }
 
@@ -60,6 +60,7 @@
 .blockMorado {
     height: 90px;
     background-color: #732796;
+    margin-top: 20px;
 }
 
 .text-white {
@@ -136,5 +137,9 @@ justify-content: center;
     margin-top: 20px;
   }
 
+  #linkContactanos > a {
+   /*  text-decoration: none; */
+    color:white;
+  }
 
 
