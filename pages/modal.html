@@ -24,6 +24,10 @@
                     <div class="modal-body">
                         <form id="signupForm">
                             <div class="mb-3">
+                                <label for="name" class="col-form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required autofocus>
+                            </div>
+                            <div class="mb-3">
                                 <label for="email" class="col-form-label">Correo electrónico</label>
                                 <input type="text" class="form-control" id="email" placeholder="usuario@example.com" required>
                             </div>
@@ -35,7 +39,7 @@
                                 <input type="password"class="form-control" id="confirmacion" placeholder="************" required><br>
                                 <div id="error-message-signup" style="color: red; text-align: center;"></div>
                             </div>
-                            <p>¿Ya tienes una cuenta? <span class="ingresa" id="ingresaLink">Ingresa aquí.</span></p>
+                            <p>¿Ya tienes una cuenta? <span class="ingresa" id="ingresaLink"><a href="../pages/login.html">Ingresa aquí.</a></span></p>
                             <div class="modal-footer">
                                 <button type="submit" class="btn-signup">Registrarse</button>
                             </div>
