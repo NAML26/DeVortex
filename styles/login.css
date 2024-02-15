@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
+
+.caja-imagen {
+    background-image: url(../assets/multimedia/morado-pared.png);
+    background-size: cover;
+  background-position: center;
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.caja-imagen2 {
+    background-image: url(../assets/multimedia/morado-pared-espejo.png);
+    background-size: cover;
+  background-position: center;
+  margin: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container-fluid {
+    height: 100vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+ .login-form {
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+     align-items: center; 
+    } 
+
+    @media screen and (max-width: 575px) {
+         div.container.caja-imagen2 {
+            display: none; 
+        }
+    }
+
+       

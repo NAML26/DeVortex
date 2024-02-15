@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&display=swap'); /* JALDI 700 títulos y encabezados */
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
+
+
+
+.invi-main {
+  /* height: 433vh; */
+  margin-bottom: 20px;
+}
+
+
+/* .contenedor-invitaciones-17, .contenedor-invitaciones-18, .contenedor-invitaciones-19 {
+    border: solid 3px #666;
+    background-color: blue;
+    height: 300px;
+
+} */
+
+/* #modalContainer{
+    display: block;
+} */
+
+.colorLetras {
+    color: #732796;
+    font-weight: bolder;
+} 
+
+
+
+/*.resaltar {
+    list-style-type: ; /* Elimina los marcadores de lista predeterminados */
+  /*   counter-reset: ;  Reinicia el contador para cada lista 
+} 
+ */
+/* .resaltar li:before {
+    /* content: ; /* Muestra el número del contador */
+    /* color: #732796; */ /* Cambia el color a azul, puedes ajustarlo según tus preferencias */
+    /* margin-right: 0.5em; */ /* Espaciado entre el número y el texto */
+   /*  font-weight: bold; */ /* Hace que el número sea más visible */
+   /*  display: inline-block; */ /* Alinea el número con el texto */
+/* }  */
+
+/* .resaltar li { */
+   /*  counter-increment: ; */ /* Incrementa el contador para cada elemento de la lista */
+    /* margin-bottom: ; */ /* Añade un poco de espacio entre los elementos de la lista */
+/* } */
+
+/* .end{
+    text-align: center;
+}*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+.blockMorado {
+    height: 90px;
+    background-color: #732796;
+    margin-top: 20px;
+}
+
+.text-white {
+    text-align: center;
+    font-size: 26px;
+} 
+
+.invitaciones {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px/*  19px 35px 13px 35px */;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitaciones-texto {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.invitaciones .seccion-clara {
+    width: 50%;
+}
+
+.invitacion-imagen {
+    max-width: 400px;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item {
+display: flex;
+justify-content: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+ margin-top: auto; /* Ajustar automáticamente el margen superior para alinear en la parte inferior */
+  height: 0px; /* Altura del botón */
+  display: flex;
+  align-items: flex-end; /* Alinear el contenido en la parte inferior del botón */
+}
+
+.form-check-input {
+    width: 80px; /* Ancho del cuadro del checkbox */
+    height: 80px; /* Altura del cuadro del checkbox */
+  }
+
+  /* Estilos para la etiqueta del checkbox */
+  .form-check-label {
+    font-size: 18px; /* Tamaño de la fuente de la etiqueta */
+    margin-left: 10px; /* Margen izquierdo para separar el cuadro del texto */
+  }
+
+   .cardContainer {
+    width: 100%;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+   /*  border: #732796 solid 5px; */
+  
+
+   #userCard {
+    width: 500px;
+    /* min-height: 700px; */
+   
+  } 
+
+
+  footer {
+    margin-top: 20px;
+  }
+
+  #linkContactanos > a {
+   /*  text-decoration: none; */
+    color:white;
+  }
+
+
