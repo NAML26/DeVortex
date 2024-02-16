@@ -45,3 +45,34 @@ color: white;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+#tarjetasGuardadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: auto;  */
+}
+
+
+.card {
+    margin: 10px; /* Añade un pequeño margen entre las tarjetas */
+}
+
+#tarjetasGuardadas {
+    height: auto;
+}
+
+/*desaparecer boton de mas información y de guardar en mi Lokl*/
+
+.btn-primary, #guardarTarjeta {
+    display:none !important;
+
+}
+
+.titulo_miespacio{
+    text-align: center;
+    margin: 2px;
+    font-size: 50px;
+    color: #732796;
+}

@@ -16,6 +16,7 @@
     <script defer src="../js/main.js"></script>
     <script defer src="../js/modal.js"></script>
     <script defer src="../js/basedatos/lugares.js"></script>
+    <script defer src="../js/lugares.js"></script>
     <link rel="stylesheet" href="../styles/lugares.css">
     <link rel="stylesheet" href="../styles/index.css">
     <!-- <link rel="stylesheet" href="../styles/style.css"> -->
@@ -39,13 +40,14 @@
   <!-- <div class="titulo_lugares">
   <h1>Lugares</h1>
     </div> -->
-<main class="d-flex justify-content-center align-items-center">
+<main class="d-flex justify-content-center align-items-center" id="contenedorTarjetas">
   <head><div id="modalContainer"></div></head>
   <div id="lugaresContainer"></div>
   <body>
     <section class="normal">
       <div class="container">
-          <div class="card" style="width: 22rem">
+        
+          <div class="card" style="width: 22rem" id="tarjeta1">
               <div>
                   <img src="/assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1"> 
               </div>
@@ -65,10 +67,11 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta2">
               <img src="/assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -86,10 +89,11 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
-              </div>
+                  <button id="guardarTarjeta" >Guardar</button>
+                </div>
           </div>
 
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta3">
               <img src="/assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -107,6 +111,7 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
@@ -119,7 +124,7 @@
               <div class="carousel-inner">
                   <div class="carousel-item active">
                       <div class="card">
-                          <div class="card" style="width: 22rem;">
+                          <div class="card" style="width: 22rem;" id="tarjeta">
                               <div>
                                   <img src="/assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1">
                               </div>
@@ -139,13 +144,14 @@
                                   <a href="./contactanos.html" class="btn btn-primary">
                                       Quiero más información
                                   </a>
+                                  <button id="guardarTarjeta" >Guardar</button>
                               </div>
                           </div><!-- Contenido de la primera tarjeta -->
                       </div>
                   </div>
                   <div class="carousel-item">
                       <div class="card">
-                          <div class="card" style="width: 22rem;">
+                          <div class="card" style="width: 22rem;" id="tarjeta">
                               <img src="/assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
                               <div class="texto--lugares">
                                   <h5 class="card-title">
@@ -163,13 +169,14 @@
                                   <a href="./contactanos.html" class="btn btn-primary">
                                       Quiero más información
                                   </a>
+                                  <button id="guardarTarjeta" >Guardar</button>
                               </div>
                           </div><!-- Contenido de la segunda tarjeta -->
                       </div>
                   </div>
                   <div class="carousel-item">
                       <div class="card">
-                          <div class="card" style="width: 22rem;">
+                          <div class="card" style="width: 22rem;" id="tarjeta">
                               <img src="/assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
                               <div class="texto--lugares">
                                   <h5 class="card-title">
@@ -187,6 +194,7 @@
                                   <a href="./contactanos.html" class="btn btn-primary">
                                       Quiero más información
                                   </a>
+                                  <button id="guardarTarjeta" >Guardar</button>
                               </div>
                           </div>
                       </div><!-- Contenido de la tercera tarjeta -->
@@ -208,7 +216,7 @@
 
   <section class="normal">
       <div class="container">
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta">
               <img src="/assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -226,10 +234,11 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta">
               <img src="/assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -247,10 +256,11 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta">
               <img src="/assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -268,6 +278,7 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
@@ -281,7 +292,7 @@
               <!-- Contenido de la primera tarjeta -->
               <div class="carousel-item active">
                   <div class="card">
-                      <div class="card" style="width: 22rem;">
+                      <div class="card" style="width: 22rem;" id="tarjeta">
                           <img src="/assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                               <h5 class="card-title">
@@ -299,6 +310,7 @@
                               <a href="./contactanos.html" class="btn btn-primary">
                                   Quiero más información
                               </a>
+                              <button id="guardarTarjeta" >Guardar</button>
                           </div>
                       </div>
       
@@ -307,7 +319,7 @@
               <!-- Contenido de la segunda tarjeta -->
               <div class="carousel-item">
                   <div class="card">
-                      <div class="card" style="width: 22rem;">
+                      <div class="card" style="width: 22rem;" id="tarjeta">
                           <img src="/assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                               <h5 class="card-title">
@@ -325,6 +337,7 @@
                               <a href="./contactanos.html" class="btn btn-primary">
                                   Quiero más información
                               </a>
+                              <button id="guardarTarjeta" >Guardar</button>
                           </div>
                       </div>
                   </div>
@@ -332,7 +345,7 @@
               <!-- Contenido de la tercera tarjeta -->
               <div class="carousel-item">
                   <div class="card">
-                      <div class="card" style="width: 22rem;">
+                      <div class="card" style="width: 22rem;" id="tarjeta">
                           <img src="/assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                               <h5 class="card-title">
@@ -350,6 +363,7 @@
                               <a href="./contactanos.html" class="btn btn-primary">
                                   Quiero más información
                               </a>
+                              <button id="guardarTarjeta" >Guardar</button>
                           </div>
                       </div>
                   </div>
@@ -370,7 +384,7 @@
     <!-- Tercera seccion -->
   <section class="normal">
       <div class="container">
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta">
               <img src="/assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -388,10 +402,11 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta">
               <img src="/assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -409,10 +424,11 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
-          <div class="card" style="width: 22rem;">
+          <div class="card" style="width: 22rem;" id="tarjeta">
               <img src="../assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                 <h5 class="card-title">
@@ -430,6 +446,7 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
@@ -443,7 +460,7 @@
               <!-- Contenido de la primera tarjeta -->
               <div class="carousel-item active">
                   <div class="card">
-                      <div class="card" style="width: 22rem;">
+                      <div class="card" style="width: 22rem;" id="tarjeta">
                           <img src="/assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                             <h5 class="card-title">
@@ -461,6 +478,7 @@
                               <a href="./contactanos.html" class="btn btn-primary">
                                   Quiero más información
                               </a>
+                              <button id="guardarTarjeta" >Guardar</button>
                           </div>
                       </div>
       
@@ -469,7 +487,7 @@
               <!-- Contenido de la segunda tarjeta -->
               <div class="carousel-item">
                   <div class="card">
-                      <div class="card" style="width: 22rem;">
+                      <div class="card" style="width: 22rem;" id="tarjeta">
                           <img src="/assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                             <h5 class="card-title">
@@ -487,6 +505,7 @@
                               <a href="./contactanos.html" class="btn btn-primary">
                                   Quiero más información
                               </a>
+                              <button id="guardarTarjeta" >Guardar</button>
                           </div>
                       </div>
                   </div>
@@ -494,7 +513,7 @@
               <!-- Contenido de la tercera tarjeta -->
               <div class="carousel-item">
                   <div class="card">
-                      <div class="card" style="width: 22rem;">
+                      <div class="card" style="width: 22rem;" id="tarjeta">
                           <img src="../assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                             <h5 class="card-title">
@@ -512,6 +531,7 @@
                               <a href="./contactanos.html" class="btn btn-primary">
                                   Quiero más información
                               </a>
+                              <button id="guardarTarjeta" >Guardar</button>
                           </div>
                       </div>
                   </div>
