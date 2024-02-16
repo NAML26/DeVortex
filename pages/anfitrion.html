@@ -3,6 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" href="/styles/index.css">
         <link rel="stylesheet" href="/styles/modal.css">
@@ -19,7 +20,7 @@
         <script defer src="/js/main.js"></script>
         <!-- <script defer src="ruta/a/bootstrap.bundle.min.js"></script> -->
         <script defer src="/js/modal.js"></script>
-        <script defer src="../js/anfitrion.js"></script>
+        <script defer src="./js/anfitrion.js"></script>
    
         <title>Conviértete en Anfitrión</title>
         <link rel="stylesheet" href="../styles/anfitrion.css">
@@ -32,11 +33,12 @@
         <nav class="nav" id="nav">
         <button class="cerrar-menu" id="cerrar">Cerrar</button>
             <ul class="nav-list">
-                <li><a href="/pages/lugares.html">Lugares</a></li>
-                <li><a href="/pages/eventos.html">Eventos</a></li>
-                <li><a href="/pages/invitaciones.html">Invitaciones</a></li>
-                <li><a href="/pages/miespacio.html">Mi Lok'l</a></li>
-                <li><a href="/pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+                <li><a href="./pages/lugares.html">Lugares</a></li>
+                <li><a href="../pages/eventos.html">Eventos</a></li>
+                <li><a href="../pages/invitaciones.html">Invitaciones</a></li>
+                <li><a href="../pages/miespacio.html">Mi Lok'l</a></li>
+                <li><a href="../pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+                <li><a href=".html"><i class="material-icons">logout</i></a></li>
             </ul>
         </nav>
         <!------------------------ NAVBAR ----------------------->
@@ -48,11 +50,34 @@
             </div>
             <div class="container col-6 p-3">
                 <form class="form-anfitrion">
+                    <h1>Completa la información de tu espacio</h1>
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="inputCalle">
                       </div>
-                    <label>Tipo de Espacio</label>
+                      <div class="mb-3">
+                        <label for="tipo_espacio" class="form-label">Tipo de espacio</label>
+                        <input type="text" class="form-control" id="inputEspacio">
+                      </div>
+                      <div class="mb-3">
+                        <label for="capacidad" class="form-label">Capacidad</label>
+                        <input type="text" class="form-control" id="inputCapacidad">
+                      </div>
+                      <div class="mb-3">
+                        
+                        <div class="row calle-numero">
+                            
+                            <!-- <div class="col">
+                                <input type="date" class="form-control" id="inputFecha">
+                                <div id="numeroHelp" class="form-text">Fecha</div>
+                            </div>
+                            <div class="col">
+                                <input type="time" class="form-control" id="inputHora">
+                                <div id="numeroHelp" class="form-text">Hora</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- <label>Tipo de Espacio</label>
                     <select class="form-select form-select-sm mb-3" aria-label="Medium select example">
                         <option selected>Selecciona un espacio</option>
                         <option value="1">Salón</option>
@@ -66,17 +91,17 @@
                         <option selected>Selecciona una Capacidad máxima</option>
                         <option value="1">50</option>
                         <option value="2">100</option>
-                        <option value="2">150</option>
-                        <option value="3">200</option>
-                        <option value="3">250</option>
-                        <option value="3">300</option>
-                        <option value="3">350</option>
-                        <option value="3">400</option>
-                        <option value="3">450</option>
-                        <option value="3">500</option>
-                        <option value="3">550</option>
-                        <option value="3">Más de 550</option>
-                      </select>
+                        <option value="3">150</option>
+                        <option value="4">200</option>
+                        <option value="5">250</option>
+                        <option value="6">300</option>
+                        <option value="7">350</option>
+                        <option value="8">400</option>
+                        <option value="9">450</option>
+                        <option value="10">500</option>
+                        <option value="11">550</option>
+                        <option value="12">Más de 550</option>
+                      </select> -->
                       <div class="mb-3">
                         <label for="Direccion" class="form-label">Dirección</label>
                         <div class="col">
@@ -151,7 +176,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="/assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
+                        <img src="/assets/multimedia/logo-blanco.jpeg" alt="Logo de SLee Dw">
                     </a>
                 </figure>
             </div>

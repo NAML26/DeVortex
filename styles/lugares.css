@@ -24,4 +24,18 @@
   .card p {
     margin: 5px 0;
   }
+
   
+
+  /*estilos de boton guardar*/
+  
+  #guardarTarjeta{
+background-color: #732796;
+color: #f9f9f9;
+border-radius: 5px;
+margin-top: 15px;
+padding: 5px 10px;
+border: none;
+
+  }
+

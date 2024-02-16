@@ -2,6 +2,8 @@ const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
+
+
 abrir.addEventListener("click", () => {
   nav.classList.add("visible");
 });
@@ -14,7 +16,7 @@ cerrar.addEventListener("click", () => {
 
 document
   .getElementById("crear-invitacion")
-  .addEventListener("click", function () {
+  .addEventListener("click", () => {
     scrollToSection("container-crear-invitacion");
   });
 
@@ -41,22 +43,106 @@ function mostrarDatos() {
   var imagenActiva = carrusel.querySelector(
     ".carousel-item.active .invitacion-imagen"
   );
-  var imagenURL = imagenActiva.src;
+  // Obtener las dimensiones originales de la imagen
+  var anchoOriginal = imagenActiva.naturalWidth;
+  var altoOriginal = imagenActiva.naturalHeight;
 
-  // Construir HTML para la Card
-  var cardHTML = `
-    <div style="background-image: url('${imagenURL}'); padding: 60px; background-size: cover; height: 700px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #333; font-family: 'Comic Sans MS', cursive, sans-serif;">
-        <h2 style="font-weight: bold; font-size:36px; font-family: 'Comic Sans MS', cursive, sans-serif; margin-top: 100px;">${inputNombre}</h2>
-        <p style="font-size:18px; margin: 5px">El día: ${inputFecha},</p>
-        <p style="font-size:18px; margin: 5px;">a las: ${inputHora} hrs.</p>
-        <p style="font-size:18px; margin: 5px;">Te esperamos en: ${inputDireccion}</p>
-        <p style="font-size:18px; margin: 5px;">${inputComentar}</p>
-        <p style="font-size:18px; margin: 5px;">Confirma tu asistencia al: ${inputTelefono}</p>
-    </div>
-    `;
-  // Mostrar
-  document.getElementById("userCard").innerHTML = cardHTML;
-}
+  // Crear un elemento canvas
+  const canvas = document.createElement("canvas");
+  canvas.width = anchoOriginal;
+  canvas.height = altoOriginal;
+  const ctx = canvas.getContext("2d");
+
+  // Dibujar la imagen original en el canvas
+  ctx.drawImage(imagenActiva, 0, 0);
+
+
+
+  // Calcular la posición x centrada
+const xCentrado = canvas.width/ 2;
+
+// Agregar el texto al canvas
+ctx.font = "120px Comic Sans MS"; // Estilo de fuente y tamaño
+ctx.fillStyle = "#333"; // Color del texto
+ctx.textAlign = "center";
+ctx.fillText(inputNombre, xCentrado, 800);
+
+ctx.font = "50px Jaldi"; // Estilo de fuente y tamaño
+ctx.fillStyle = "#333"; // Color del texto
+ctx.textAlign = "center";
+const customFecha = `El día: ${inputFecha},`
+ctx.fillText(customFecha, xCentrado, 950);
+
+ctx.font = "60px Jaldi"; // Estilo de fuente y tamaño
+ctx.fillStyle = "#333"; // Color del texto
+ctx.textAlign = "center";
+const customHora = `a las: ${inputHora} hrs.`
+ctx.fillText(customHora, xCentrado, 1100);
+
+ctx.font = "45px Jaldi"; // Estilo de fuente y tamaño
+ctx.fillStyle = "#333"; // Color del texto
+ctx.textAlign = "center";
+const customDireccion = `Te esperamos en: ${inputDireccion}`
+ctx.fillText(customDireccion, xCentrado, 1250);
+
+ctx.font = "50px Jaldi"; // Estilo de fuente y tamaño
+ctx.fillStyle = "#333"; // Color del texto
+ctx.textAlign = "center";
+ctx.fillText(inputComentar, xCentrado, 1400);
+
+ctx.font = "50px Jaldi"; // Estilo de fuente y tamaño
+ctx.fillStyle = "#333"; // Color del texto
+ctx.textAlign = "center";
+const customTel =  `Confirma tu asistencia al: ${inputTelefono}`;
+ctx.fillText(customTel, xCentrado, 1550);
+
+  // Obtener la URL de la imagen combinada
+  const imagenCombinadaURL = canvas.toDataURL("image/png");
+
+  // Crear un nuevo elemento img
+const imgElement = document.createElement("img");
+imgElement.src = imagenCombinadaURL;
+
+// Actualizar el contenido del div
+const userCardDiv = document.getElementById("userCard");
+userCardDiv.innerHTML = ""; // Limpia el contenido actual
+userCardDiv.appendChild(imgElement); // Agrega la imagen al div
+
+const botonDescargar = document.createElement("button");
+botonDescargar.className = "especial2 guardar-imagen";
+botonDescargar.textContent = "Guardar invitación";
+botonDescargar.onclick = function() {
+  const link = document.createElement("a");
+  link.href = imagenCombinadaURL;
+  link.download = "invitacion_con_texto.jpeg"; // Nombre del archivo
+  link.click();
+};
+userCardDiv.appendChild(botonDescargar);
+
+  }
+
+  //redirección de registro completo a MiLokl
+  //<---------------------------------------->
+/*   // const registro = document.getElementById('toRegistroCompleto');
+  // registro.addEventListener('click', () =>{ */
+  //   /* e.preventDefault() */
+ /*  //   alert("Gracias por completar tu registro, tu Lok'l ha sido publicado con éxito");
+  //   window.location.href = 'miespacio.html' 
+  // });  */
+
+  //<---------------------------------------->
+
+  //  document.getElementById('myForm').addEventListener('submit', function (event) {
+  //   event.preventDefault();
+
+  //   alert("Gracias por completar tu registro, tu Lok'l ha sido publicado con éxito");
+
+  //   window.location.href = 'index.html' 
+    
+  // })
+
+  //<---------------------------------------->
+
 /****************************Término Página invitaciones****************************/
 
 /****************Insertar lugares******************/
@@ -78,9 +164,21 @@ lugares.forEach(lugar => {
   lugaresContainer.appendChild(card);
 }); */
 
-/*const registro = document.getElementById('toRegistroCompleto');
-registro.addEventListener('click', (e) =>{
-  e.preventDefault()
-  window.location.href = '../registroCompleto.html'
-}); 
-llamar registro completo con el boton de anunciar espacio*/
+
+//llamar registro completo con el boton de anunciar espacio
+
+// const lugaresContainer = document.getElementById("lugaresContainer");
+
+// lugares.forEach(lugar => {
+//   const card = document.createElement("div");
+//   card.classList.add("card");
+
+//   card.innerHTML = `
+//     <h2>${lugar.nombre}</h2>
+//     <p>Precio: $${lugar.precio}</p>
+//     <p>Capacidad: ${lugar.capacidad}</p>
+//     <p>Ubicación: ${lugar.ubicacion}</p>
+//   `;
+
+//   lugaresContainer.appendChild(card);
+// });

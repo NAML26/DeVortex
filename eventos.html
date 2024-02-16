@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!-- <html lang="es"> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS General -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- CSS de eventos-->
+  <link rel="stylesheet" href="./styles/eventos.css">
+  <!--  -->
+  <link rel="shortcut icon" href="./assets/multimedia/icon2.svg" type="image/x-icon">
+  <!-- JS Bootstrap -->
+  <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CDN de bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CDN de iconos de font-awesome -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- JS para linkear ???¿¿¿ -->
+  <script defer src="./js/main.js"></script>
+  <!-- JS para linkear el modal a la página -->
+  <script defer src="./js/modal.js"></script>
+
+  <script defer src="./js/lugares.js"></script>
+  <title>Eventos</title>
+</head>
+<body>
+  <header>
+    <a href="./index.html"> <img class="logo" src="./assets/multimedia/lokl-logo.png" alt="log"/> </a>
+    <button class="abrir-menu" id="abrir">Abrir</button>
+    <nav class="nav" id="nav">
+      <button class="cerrar-menu" id="cerrar">Cerrar</button>
+      <ul class="nav-list">
+        <li><a href="./lugares.html">Lugares</a></li>
+        <li><a href="./eventos.html">Eventos</a></li>
+        <li><a href="./invitaciones.html">Invitaciones</a></li>
+        <li><a href="./miespacio.html">Mi Lok'l</a></li>
+        <li><a href="./login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+        <li><a href="./login.html"><i class="material-icons">logout</i></a></li> 
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <!------------------------------- ENCABEZADO ---------------------------->
+    
+    <!-- DAVID(+) Se agrega contenedor para trabajar el texto superior de eventos -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container row col-12 p-5 col-md-6 col-xxl-4">
+        <h3 class="colorLetras">Asiste a tu evento ideal</h3>
+        <p>Explora un mundo de posibilidades con nuestro servicio en línea que te sumerge en la riqueza de eventos <span class="colorLetras">culturales, deportivos, gastronómicos y sociales</span>. Nuestra plataforma presenta una lista detallada de categorías de eventos, cada una con información completa sobre horarios, ubicaciones y opciones de participación. </p>
+        <a class="especial2 exploraA" href="#abajo">Explora ahora</a>
+        </div>
+        <div class="container col-12  p-5 col-md-6 col-xxl-6">
+         <img class="img-fluid eventosEsc" src="./assets/eventos/escenario.jpeg" alt="invitacion-muestra">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="blockMorado col-12 p-3 col-xxl-12 col-sm-12">
+          <a href=""></a><p class="text-white">Explora, Reserva, Asiste y Disfruta</p>
+        </div>
+      </div>
+    </div>
+    <!--DAVID AGREGO LAS 3 LINEAS DE CARDS-->
+
+    <!----------------------------- CARDS EVENTOS ---------------------------->
+    
+    <!-- PRIMERA FILA de cards -->
+    <section class="normal">
+        <div class="container">
+            
+            <!-- CARD 1 -->
+            <div class="card" style="width: 21rem;">
+                <img src="./assets/eventos/evento1.jpeg" class="card-img-top" alt="flayer-evento">
+                <div class="card-body">
+                    <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                    <button id="guardarTarjeta" >Guardar</button>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="card" style="width: 21rem;">
+                <img src="./assets/eventos/evento4.jpeg" class="card-img-top" alt="flayer-evento">
+                <div class="card-body">
+                    <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                    <button id="guardarTarjeta" >Guardar</button>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="card" style="width: 21rem;">
+                <img src="./assets/eventos/evento2.jpeg" class="card-img-top" alt="flayer-evento">
+                <div class="card-body">
+                    <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                    <button id="guardarTarjeta" >Guardar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARRUSEL de la primera fila de cards -->
+    <section class="espera">
+        <div class="container">
+            <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Contenido de la primera tarjeta -->
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card" style="width: 21rem;">
+                                <img src="./assets/eventos/evento1.jpeg" class="card-img-top" alt="flayer-evento">
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                    <button id="guardarTarjeta" >Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenido de la segunda tarjeta -->
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card" style="width: 21rem;">
+                                <img src="./assets/eventos/evento4.jpeg" class="card-img-top" alt="flayer-evento">
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                    <button id="guardarTarjeta" >Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenido de la tercera tarjeta -->
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card" style="width: 21rem;">
+                                <img src="./assets/eventos/evento2.jpeg" class="card-img-top" alt="flayer-evento">
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                    <button id="guardarTarjeta" >Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- SEGUNDA FILA de cards -->
+    <section class="normal">
+        <div class="container">
+
+            <!-- 1 -->
+          <div class="card" style="width: 21rem;">
+              <img src="./assets/eventos/evento8.jpeg" class="card-img-top" alt="flayer-evento">
+              <div class="card-body">
+                  <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                  <button id="guardarTarjeta" >Guardar</button>
+              </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="card" style="width: 21rem;">
+              <img src="./assets/eventos/evento5.jpeg" class="card-img-top" alt="flayer-evento">
+              <div class="card-body">
+                  <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                  <button id="guardarTarjeta" >Guardar</button>
+              </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="card" style="width: 21rem;">
+              <img src="./assets/eventos/evento7.jpeg" class="card-img-top" alt="flayer-evento">
+              <div class="card-body">
+                  <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                  <button id="guardarTarjeta" >Guardar</button>
+              </div>
+          </div>
+
+        </div>
+  </section>
+
+  <!-- CARRUSEL de la segunda fila de cards -->
+  <section class="espera">
+      <div class="container">
+          <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                  <!-- Contenido de la primera tarjeta -->
+                  <div class="carousel-item active">
+                      <div class="card">
+                          <div class="card" style="width: 21rem;">
+                              <img src="./assets/eventos/evento8.jpeg" class="card-img-top" alt="flayer-evento">
+                              <div class="card-body">
+                                  <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                  <button id="guardarTarjeta" >Guardar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Contenido de la segunda tarjeta -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card" style="width: 21rem;">
+                              <img src="./assets/eventos/evento5.jpeg" class="card-img-top" alt="flayer-evento">
+                              <div class="card-body">
+                                  <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                  <button id="guardarTarjeta" >Guardar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Contenido de la tercera tarjeta -->
+                  <div class="carousel-item">
+                      <div class="card">
+                          <div class="card" style="width: 21rem;">
+                              <img src="./assets/eventos/evento7.jpeg" class="card-img-top" alt="flayer-evento">
+                              <div class="card-body">
+                                  <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                  <button id="guardarTarjeta" >Guardar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- TERCERA FILA de cards -->
+  <section class="normal">
+    <div class="container">
+
+        <!-- 1 -->
+        <div class="card" style="width: 21rem;">
+            <img src="./assets/eventos/evento3.jpeg" class="card-img-top" alt="flayer-evento">
+            <div class="card-body">
+                <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                <button id="guardarTarjeta" >Guardar</button>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card" style="width: 21rem;">
+            <img src="./assets/eventos/evento6.jpeg" class="card-img-top" alt="flayer-evento">
+            <div class="card-body">
+                <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                <button id="guardarTarjeta" >Guardar</button>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card" style="width: 21rem;">
+            <img src="./assets/eventos/evento9.jpeg" class="card-img-top" alt="flayer-evento">
+            <div class="card-body">
+                <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                <button id="guardarTarjeta" >Guardar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CARRUSEL de la tercera fila de cards -->
+<section class="espera">
+    <div class="container">
+        <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Contenido de la primera tarjeta -->
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card" style="width: 21rem;">
+                            <img src="./assets/eventos/evento3.jpeg" class="card-img-top" alt="flayer-evento">
+                            <div class="card-body">
+                                <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                <button id="guardarTarjeta" >Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenido de la segunda tarjeta -->
+                    <!-- <div class="card">
+                        <div class="card" style="width: 21rem;">
+                            <img src="./assets/eventos/evento6.jpeg" class="card-img-top" alt="flayer-evento">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary">Reserva</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Contenido de la tercera tarjeta -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card" style="width: 21rem;">
+                            <img src="./assets/eventos/evento9.jpeg" class="card-img-top" alt="flayer-evento">
+                            <div class="card-body">
+                                <a href="./contactanos.html" class="btn btn-primary">Reserva</a>
+                                <button id="guardarTarjeta" >Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div id="soyespecialxd2"></div> -->
+  </section>
+
+  <!-- MODAL de login -->
+  <div id="modalContainer"></div>
+</main>
+
+<!-- ******************************Footer********************************** -->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+    <div class="box">
+      <a href="#">Volver al inicio</a><br>
+      <a href="./contactanos.html">Contáctanos</a><br>
+      <a href="./acercadenosotros.html">Acerca de nosotros</a><br>
+      <a href="./condiciones.html">Condiciones legales</a>
+    </div>
+
+    <div class="box">
+      <h2>SÍGUENOS</h2>
+      <div class="red-social">
+        <a href="https://www.instagram.com/" target=_blank class="fa">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target=_blank class="fa">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com/" target=_blank class="fa">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target=_blank class="fa">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <figure>
+        <a href="#">
+          <img src="./assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
+        </a>
+      </figure>
+    </div>
+    </div>
+
+  <div class="grupo-2">
+    <small>&copy; 2024 <b id="abajo"></b> - Todos los Derechos Reservados.</small>
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS General -->
   <link rel="stylesheet" href="../styles/style.css">
   <!-- CSS de eventos-->
@@ -22,6 +23,8 @@
   <script defer src="../js/main.js"></script>
   <!-- JS para linkear el modal a la página -->
   <script defer src="../js/modal.js"></script>
+
+  <script defer src="../js/lugares.js"></script>
   <title>Eventos</title>
 </head>
 <body>
@@ -36,7 +39,8 @@
         <li><a href="../pages/invitaciones.html">Invitaciones</a></li>
         <li><a href="../pages/miespacio.html">Mi Lok'l</a></li>
         <li><a href="../pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
-      </ul>
+        <li><a href="../pages/login.html"><i class="material-icons">logout</i></a></li> 
+    </ul>
     </nav>
   </header>
   <main>
@@ -51,7 +55,7 @@
         <a class="especial2 exploraA" href="#abajo">Explora ahora</a>
         </div>
         <div class="container col-12  p-5 col-md-6 col-xxl-6">
-         <img class="img-fluid eventosEsc" src="../assets/eventos/escenario.png" alt="invitacion-muestra">
+         <img class="img-fluid eventosEsc" src="../assets/eventos/escenario.jpeg" alt="invitacion-muestra">
         </div>
       </div>
     </div>
@@ -69,25 +73,31 @@
     <!-- PRIMERA FILA de cards -->
     <section class="normal">
         <div class="container">
+            
             <!-- CARD 1 -->
             <div class="card" style="width: 21rem;">
-                <img src="../assets/eventos/evento1.png" class="card-img-top" alt="flayer-evento">
+                <img src="../assets/eventos/evento1.jpeg" class="card-img-top" alt="flayer-evento">
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Reserva</a>
+                    <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                    <button id="guardarTarjeta" >Guardar</button>
                 </div>
             </div>
 
+            <!-- 2 -->
             <div class="card" style="width: 21rem;">
-                <img src="../assets/eventos/evento4.png" class="card-img-top" alt="flayer-evento">
+                <img src="../assets/eventos/evento4.jpeg" class="card-img-top" alt="flayer-evento">
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Reserva</a>
+                    <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                    <button id="guardarTarjeta" >Guardar</button>
                 </div>
             </div>
 
+            <!-- 3 -->
             <div class="card" style="width: 21rem;">
-                <img src="../assets/eventos/evento2.png" class="card-img-top" alt="flayer-evento">
+                <img src="../assets/eventos/evento2.jpeg" class="card-img-top" alt="flayer-evento">
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Reserva</a>
+                    <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                    <button id="guardarTarjeta" >Guardar</button>
                 </div>
             </div>
         </div>
@@ -103,9 +113,10 @@
                     <div class="carousel-item active">
                         <div class="card">
                             <div class="card" style="width: 21rem;">
-                                <img src="../assets/eventos/evento1.png" class="card-img-top" alt="flayer-evento">
+                                <img src="../assets/eventos/evento1.jpeg" class="card-img-top" alt="flayer-evento">
                                 <div class="card-body">
-                                    <a href="#" class="btn btn-primary">Reserva</a>
+                                    <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                    <button id="guardarTarjeta" >Guardar</button>
                                 </div>
                             </div>
                         </div>
@@ -115,9 +126,10 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="card" style="width: 21rem;">
-                                <img src="../assets/eventos/evento4.png" class="card-img-top" alt="flayer-evento">
+                                <img src="../assets/eventos/evento4.jpeg" class="card-img-top" alt="flayer-evento">
                                 <div class="card-body">
-                                    <a href="#" class="btn btn-primary">Reserva</a>
+                                    <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                    <button id="guardarTarjeta" >Guardar</button>
                                 </div>
                             </div>
                         </div>
@@ -127,9 +139,10 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="card" style="width: 21rem;">
-                                <img src="../assets/eventos/evento2.png" class="card-img-top" alt="flayer-evento">
+                                <img src="../assets/eventos/evento2.jpeg" class="card-img-top" alt="flayer-evento">
                                 <div class="card-body">
-                                    <a href="#" class="btn btn-primary">Reserva</a>
+                                    <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                    <button id="guardarTarjeta" >Guardar</button>
                                 </div>
                             </div>
                         </div>
@@ -142,25 +155,34 @@
     <!-- SEGUNDA FILA de cards -->
     <section class="normal">
         <div class="container">
+
+            <!-- 1 -->
           <div class="card" style="width: 21rem;">
-              <img src="../assets/eventos/evento8.png" class="card-img-top" alt="flayer-evento">
+              <img src="../assets/eventos/evento8.jpeg" class="card-img-top" alt="flayer-evento">
               <div class="card-body">
-                  <a href="#" class="btn btn-primary">Reserva</a>
+                  <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
 
+          <!-- 2 -->
           <div class="card" style="width: 21rem;">
-              <img src="../assets/eventos/evento5.png" class="card-img-top" alt="flayer-evento">
+              <img src="../assets/eventos/evento5.jpeg" class="card-img-top" alt="flayer-evento">
               <div class="card-body">
-                  <a href="#" class="btn btn-primary">Reserva</a>
+                  <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
+
+          <!-- 3 -->
           <div class="card" style="width: 21rem;">
-              <img src="../assets/eventos/evento7.png" class="card-img-top" alt="flayer-evento">
+              <img src="../assets/eventos/evento7.jpeg" class="card-img-top" alt="flayer-evento">
               <div class="card-body">
-                  <a href="#" class="btn btn-primary">Reserva</a>
+                  <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                  <button id="guardarTarjeta" >Guardar</button>
               </div>
           </div>
+
         </div>
   </section>
 
@@ -174,9 +196,10 @@
                   <div class="carousel-item active">
                       <div class="card">
                           <div class="card" style="width: 21rem;">
-                              <img src="../assets/eventos/evento8.png" class="card-img-top" alt="flayer-evento">
+                              <img src="../assets/eventos/evento8.jpeg" class="card-img-top" alt="flayer-evento">
                               <div class="card-body">
-                                  <a href="#" class="btn btn-primary">Reserva</a>
+                                  <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                  <button id="guardarTarjeta" >Guardar</button>
                               </div>
                           </div>
                       </div>
@@ -186,9 +209,10 @@
                   <div class="carousel-item">
                       <div class="card">
                           <div class="card" style="width: 21rem;">
-                              <img src="../assets/eventos/evento5.png" class="card-img-top" alt="flayer-evento">
+                              <img src="../assets/eventos/evento5.jpeg" class="card-img-top" alt="flayer-evento">
                               <div class="card-body">
-                                  <a href="#" class="btn btn-primary">Reserva</a>
+                                  <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                  <button id="guardarTarjeta" >Guardar</button>
                               </div>
                           </div>
                       </div>
@@ -198,13 +222,15 @@
                   <div class="carousel-item">
                       <div class="card">
                           <div class="card" style="width: 21rem;">
-                              <img src="../assets/eventos/evento7.png" class="card-img-top" alt="flayer-evento">
+                              <img src="../assets/eventos/evento7.jpeg" class="card-img-top" alt="flayer-evento">
                               <div class="card-body">
-                                  <a href="#" class="btn btn-primary">Reserva</a>
+                                  <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                  <button id="guardarTarjeta" >Guardar</button>
                               </div>
                           </div>
                       </div>
                   </div>
+
               </div>
           </div>
       </div>
@@ -213,24 +239,31 @@
   <!-- TERCERA FILA de cards -->
   <section class="normal">
     <div class="container">
+
+        <!-- 1 -->
         <div class="card" style="width: 21rem;">
-            <img src="../assets/eventos/evento3.png" class="card-img-top" alt="flayer-evento">
+            <img src="../assets/eventos/evento3.jpeg" class="card-img-top" alt="flayer-evento">
             <div class="card-body">
-                <a href="#" class="btn btn-primary">Reserva</a>
+                <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                <button id="guardarTarjeta" >Guardar</button>
             </div>
         </div>
 
+        <!-- 2 -->
         <div class="card" style="width: 21rem;">
-            <img src="../assets/eventos/evento6.png" class="card-img-top" alt="flayer-evento">
+            <img src="../assets/eventos/evento6.jpeg" class="card-img-top" alt="flayer-evento">
             <div class="card-body">
-                <a href="#" class="btn btn-primary">Reserva</a>
+                <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                <button id="guardarTarjeta" >Guardar</button>
             </div>
         </div>
 
+        <!-- 3 -->
         <div class="card" style="width: 21rem;">
-            <img src="../assets/eventos/evento9.png" class="card-img-top" alt="flayer-evento">
+            <img src="../assets/eventos/evento9.jpeg" class="card-img-top" alt="flayer-evento">
             <div class="card-body">
-                <a href="#" class="btn btn-primary">Reserva</a>
+                <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                <button id="guardarTarjeta" >Guardar</button>
             </div>
         </div>
     </div>
@@ -246,36 +279,39 @@
                 <div class="carousel-item active">
                     <div class="card">
                         <div class="card" style="width: 21rem;">
-                            <img src="../assets/eventos/evento3.png" class="card-img-top" alt="flayer-evento">
+                            <img src="../assets/eventos/evento3.jpeg" class="card-img-top" alt="flayer-evento">
                             <div class="card-body">
-                                <a href="#" class="btn btn-primary">Reserva</a>
+                                <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                <button id="guardarTarjeta" >Guardar</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contenido de la segunda tarjeta -->
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card" style="width: 21rem;">
-                            <img src="../assets/eventos/evento6.png" class="card-img-top" alt="flayer-evento">
+                            <img src="../assets/eventos/evento6.jpeg" class="card-img-top" alt="flayer-evento">
                             <div class="card-body">
                                 <a href="#" class="btn btn-primary">Reserva</a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Contenido de la tercera tarjeta -->
                 <div class="carousel-item">
                     <div class="card">
                         <div class="card" style="width: 21rem;">
-                            <img src="../assets/eventos/evento9.png" class="card-img-top" alt="flayer-evento">
+                            <img src="../assets/eventos/evento9.jpeg" class="card-img-top" alt="flayer-evento">
                             <div class="card-body">
-                                <a href="#" class="btn btn-primary">Reserva</a>
+                                <a href="../pages/contactanos.html" class="btn btn-primary">Reserva</a>
+                                <button id="guardarTarjeta" >Guardar</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -317,7 +353,7 @@
     <div class="box">
       <figure>
         <a href="#">
-          <img src="/assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
+          <img src="/assets/multimedia/logo-blanco.jpeg" alt="Logo de SLee Dw">
         </a>
       </figure>
     </div>

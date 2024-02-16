@@ -28,7 +28,7 @@ h3 {
     
 }
 p{
-    text-align: justify;
+    text-align: justify !important;
     font-weight:normal !important;
     font-size:large;
 }

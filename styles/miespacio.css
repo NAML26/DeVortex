@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 
-/* .container-fluid{
-
-} */
 
 #lokl-main {
     height: 100vh;
@@ -22,30 +19,60 @@
     border: solid black;
     margin: 20px;
 }
-.row{
-    border: solid black;
-    margin: 20px;
-}
-
-div.back {
-    margin-top: 60px;
-    background-image: url(../assets/multimedia/loklBack.JPG);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 100%;
-}
 
 #especial2 {
     margin: 30px;
-    padding: 20px;
+    padding: 15px;
     background-color: #732796;
     text-decoration: none;
     border-radius: 10px;
+    border: none;
+    font-weight: bold;
 
 }
 #especial2 > a{
 text-decoration: none;
 color: white;
+}
+
+.imagen__simulada{
+    width: 100%;
+    height: 75vh;
+
+    /* Estos son los estilos para las imagenes */
+    background-image: url(../assets/multimedia/loklBack.JPG);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#tarjetasGuardadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: auto;  */
+}
+
+
+.card {
+    margin: 10px; /* Añade un pequeño margen entre las tarjetas */
+}
+
+#tarjetasGuardadas {
+    height: auto;
+}
+
+/*desaparecer boton de mas información y de guardar en mi Lokl*/
+
+.btn-primary, #guardarTarjeta {
+    display:none !important;
+
+}
+
+.titulo_miespacio{
+    text-align: center;
+    margin: 2px;
+    font-size: 50px;
+    color: #732796;
 }
