@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- <html lang="es"> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/login.css">
+  <link rel="shortcut icon" href="./assets/multimedia/icon2.svg" type="image/x-icon">
+  <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/login.js"></script>
+  <script defer src="./js/main.js"></script>
+  
+  <title>Login</title>
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"> <img class="logo" src="./assets/multimedia/lokl-logo.png" alt="log" /> </a>
+    <button class="abrir-menu" id="abrir">Abrir</button>
+    <nav class="nav" id="nav">
+      <button class="cerrar-menu" id="cerrar">Cerrar</button>
+      <ul class="nav-list">
+        <li><a href="./lugares.html">Lugares</a></li>
+        <li><a href="./eventos.html">Eventos</a></li>
+        <li><a href="./invitaciones.html">Invitaciones</a></li>
+        <li><a href="./miespacio.html">Mi Lok'l</a></li>
+        <li><a Href="./login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Registrarse</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="login-main">
+    <div class="container-fluid row">
+      <div class="row">
+      <div class="container caja-imagen col-12 col-sm-6">
+        <form class="login-form" id="loginForm">
+          <h1>Iniciar sesión</h1><br>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label" >Correo electrónico</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required autofocus>
+            <!--   <div id="emailHelp" class="form-text">Ingresa tu correo electrónico.</div> -->
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div id="error-message" style="color: red;"></div><br>
+          <button type="submit" class="especial2">Acceder</button>
+        </form>
+        
+      </div>
+      <div class="container caja-imagen2 col-12 col-sm-6">
+        <h2 class="oculto">¡Únete a esta gran comunidad!</h2>
+        <img class="img-fluid oculto" src="./assets/multimedia/logo-blanco.jpeg" alt="logo">
+      </div>
+    </div>
+    </div>
+
+<div id="modalContainer"></div>
+  </main>
+ 
+  <footer class="pie-pagina">
+   
+    <div class="grupo-1">
+      <div class="box">
+        <a href="#">Volver al inicio</a><br>
+        <a href="./contactanos.html" target="">Contáctanos</a><br>
+        <a href="./acercadenosotros.html" target="">Acerca de nosotros</a><br>
+        <a href="./condiciones.html">Condiciones legales</a>
+      </div>
+      <div class="box">
+        <h2>SÍGUENOS</h2>
+        <div class="red-social">
+          <a href="https://www.instagram.com/" target=_blank class="fa"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target=_blank class="fa"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.twitter.com/" target=_blank class="fa"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/" target=_blank class="fa"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="./assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
+          </a>
+        </figure>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2024 <b></b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+</body>
+
+</html>

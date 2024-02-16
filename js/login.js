@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c4530eacd980c9a1230b50a4bf77ea17b8ebca94b58622e7da476bc65e9a115
-size 983
+const loginForm = document.querySelector('#loginForm')
+const errorMessage = document.querySelector('#error-message');
+
+loginForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+
+    const email = document.querySelector('#email').value
+    const password = document.querySelector('#password').value
+    const url = `http://localhost:8080/admin/users/byEmail?email=${email}`;
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        if (data.correo === email && data.contrasena === password){
+            alert(`Bienvenido ${data.correo}`)
+            window.location.href = './index.html' 
+        } else if (data.correo === email && data.contrasena != password){
+            errorMessage.textContent = 'Usuario y/o contraseña incorrectos';
+        }
+    })
+    .catch(error => {
+        console.error(error, 'Usuario no encontrado');
+        errorMessage.textContent = 'Usuario y/o contraseña incorrectos';
+    })
+})
+

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async function () {
     try {
-        const response = await fetch('../pages/modal.html');
+        const response = await fetch('./modal.html');
         if (!response.ok) {
             throw new Error('Error al cargar el modal');
         }
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const signupForm = document.querySelector('#signupForm');
         const errorMessages = document.querySelector('#error-message-signup'); 
         signupForm.addEventListener('submit', async (e) => {
-            e.preventDefault();// Evita que el formulario se envíe automáticamente
+            e.preventDefault(); // Evita que el formulario se envíe automáticamente
             const name = document.querySelector('#name').value;
             const email = document.querySelector('#email').value;
             const password = document.querySelector('#password').value;
@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
 
             const user = {   
-                nombre:name,           
+                nombre: name,           
                 correo: email,
                 contrasena: password
             };
           
-            const url = `http://localhost:8080/admin/users`;
+            const url = 'http://localhost:8080/admin/users';
 
             try {
                 const response = await fetch(url, {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 const data = await response.json();
                 console.log(data);
                 alert('Registro Exitoso!');
-                window.location.href = '../pages/login.html';
+                window.location.href = './login.html';
             }
             catch(error) {
                 console.error('Error al crear el usuario:', error);
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 /* document.addEventListener('DOMContentLoaded', async function () {
     try {
-        const response = await fetch('../pages/modal.html');
+        const response = await fetch('./modal.html');
         if (!response.ok) {
             throw new Error('Error al cargar el modal');
         } */
@@ -136,9 +136,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             Users.push({ name: name, email: email, password: password });
             localStorage.setItem('users', JSON.stringify(Users));
             alert('Registro Exitoso!');
-            window.location.href = '../pages/login.html'; */
+            window.location.href = './login.html'; */
        
         /* document.getElementById('ingresaLink').addEventListener('click', function () {
-            window.location.href = '../pages/login.html';
+            window.location.href = './login.html';
         }); */
       

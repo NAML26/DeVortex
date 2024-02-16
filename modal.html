@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/modal.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h1 id="exampleModalLabel">Crear una cuenta</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="signupForm">
+                            <div class="mb-3">
+                                <label for="name" class="col-form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required autofocus>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Correo electrónico</label>
+                                <input type="text" class="form-control" id="email" placeholder="usuario@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">Contraseña</label>
+                                <input type="password"class="form-control" id="password" placeholder="************" title="La contraseña debe tener al menos 6 caracteres y contener al menos un número, una letra y un símbolo." required>
+                                <div class="mb-3">
+                                <label for="password" class="col-form-label">Confirmar contraseña</label>
+                                <input type="password"class="form-control" id="confirmacion" placeholder="************" required><br>
+                                <div id="error-message-signup" style="color: red; text-align: center;"></div>
+                            </div>
+                            <p>¿Ya tienes una cuenta? <span class="ingresa" id="ingresaLink"><a href="./login.html">Ingresa aquí.</a></span></p>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn-signup">Registrarse</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+</body>
+
+</html>

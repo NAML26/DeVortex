@@ -44,3 +44,8 @@ p{
     font-weight: bold;
     text-align: center;
 }
+
+
+.ingresa > a {
+    color: #732796;
+}
