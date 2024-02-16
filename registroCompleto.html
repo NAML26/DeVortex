@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="/styles/style.css">
-        <link rel="stylesheet" href="/styles/index.css">
-        <link rel="stylesheet" href="/styles/modal.css">
-        <link rel="stylesheet" href="../styles/anfitrion.css">
-        <link rel="shortcut icon" href="../assets/multimedia/icon2.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/modal.css">
+        <link rel="stylesheet" href="./styles/anfitrion.css">
+        <link rel="shortcut icon" href="./assets/multimedia/icon2.svg" type="image/x-icon">
         <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,28 +17,30 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
-        <script defer src="/js/main.js"></script>
         <!-- <script defer src="ruta/a/bootstrap.bundle.min.js"></script> -->
-        <script defer src="/js/modal.js"></script>
-        <script defer src="../js/anfitrion.js"></script>
+        <script defer src="./js/main.js"></script>
+        <script defer src="./js/modal.js"></script>
+        <script defer src="./js/anfitrion.js"></script>
         <!-- Style de la pagina -->
-        <link rel="stylesheet" href="../styles/registroCompleto.css">
+        <link rel="stylesheet" href="./styles/registroCompleto.css">
+        <!--  -->
+        <script defer src="./js/registro.js"></script>
         <title>Registro largo</title>
 </head>
 <body>
     <header>
         <!------------------------ NAVBAR ----------------------->
-        <a href="../index.html"> <img class="logo" src="../assets/multimedia/lokl-logo.png" alt="log"/> </a>
+        <a href="./index.html"> <img class="logo" src="./assets/multimedia/lokl-logo.png" alt="log"/> </a>
         <button class="abrir-menu" id="abrir">Abrir</button>
         <nav class="nav" id="nav">
         <button class="cerrar-menu" id="cerrar">Cerrar</button>
             <ul class="nav-list">
-                <li><a href="/pages/lugares.html">Lugares</a></li>
-                <li><a href="/pages/eventos.html">Eventos</a></li>
-                <li><a href="/pages/invitaciones.html">Invitaciones</a></li>
-                <li><a href="/pages/miespacio.html">Mi Lok'l</a></li>
-                <li><a href="/pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
-                <li><a href="../pages/login.html"><i class="material-icons">logout</i></a></li>
+                <li><a href="./lugares.html">Lugares</a></li>
+                <li><a href="./eventos.html">Eventos</a></li>
+                <li><a href="./invitaciones.html">Invitaciones</a></li>
+                <li><a href="./miespacio.html">Mi Lok'l</a></li>
+                <li><a href="./login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+                <li><a href="./login.html"><i class="material-icons">logout</i></a></li>
             </ul>
         </nav>
         <!------------------------ NAVBAR ----------------------->
@@ -59,7 +61,7 @@
             <div class="col-8 p-3 div__formulario">
             <h1>¡Bienvenido a Lok'l!</h1>
             <h2>Regístrate para ser miembro de esta gran comunidad</h2>
-            <form>
+            <form id="myForm">
                   <div class="container-fluid mb-3 div_nombre">
                     <label for="disabledTextInput" class="form-label"></label>
                     <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre*">
@@ -137,7 +139,7 @@
 
                     
                  
-                  <button type="submit" class="btn btn-primary">Aceptar y Continuar</button>
+                  <button type="click" id="toRegistroCompleto" class="btn btn-primary">Aceptar y Continuar</button>
                 </fieldset>
               </form>
         </div>
@@ -152,9 +154,9 @@
         <div class="grupo-1">
             <div class="box">
                 <a href="#">Volver al inicio</a><br>
-                <a href="../pages/contactanos.html">Contáctanos</a><br>
-                <a href="../pages/acercadenosotros.html" >Acerca de nosotros</a><br>
-                <a href="../pages/condiciones.html">Condiciones legales</a>
+                <a href="./contactanos.html">Contáctanos</a><br>
+                <a href="./acercadenosotros.html" >Acerca de nosotros</a><br>
+                <a href="./condiciones.html">Condiciones legales</a>
             </div>
             <div class="box">
                 <h2>SÍGUENOS</h2>
@@ -168,7 +170,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="/assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
+                        <img src="./assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
                     </a>
                 </figure>
             </div>

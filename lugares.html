@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/lugares.css"> <!--css propio de lugares.html-->
-    <link rel="shortcut icon" href="../assets/multimedia/icon2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/lugares.css"> <!--css propio de lugares.html-->
+    <link rel="shortcut icon" href="./assets/multimedia/icon2.svg" type="image/x-icon">
     <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script defer src="../js/main.js"></script>
-    <script defer src="../js/modal.js"></script>
-    <script defer src="../js/basedatos/lugares.js"></script>
-    <script defer src="../js/lugares.js"></script>
-    <link rel="stylesheet" href="../styles/lugares.css">
-    <link rel="stylesheet" href="../styles/index.css">
-    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/basedatos/lugares.js"></script>
+    <script defer src="./js/lugares.js"></script>
+    <link rel="stylesheet" href="./styles/lugares.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <title>Lugares</title>
   </head>
   <header>
-    <a href="../index.html"> <img class="logo" src="../assets/multimedia/lokl-logo.png" alt="log"/> </a>
+    <a href="./index.html"> <img class="logo" src="./assets/multimedia/lokl-logo.png" alt="log"/> </a>
     <button class="abrir-menu" id="abrir">Abrir</button>
     <nav class="nav" id="nav">
       <button class="cerrar-menu" id="cerrar">Cerrar</button>
       <ul class="nav-list">
-        <li><a href="../pages/lugares.html">Lugares</a></li>
-        <li><a href="../pages/eventos.html">Eventos</a></li>
-        <li><a href="../pages/invitaciones.html">Invitaciones</a></li>
-        <li><a href="../pages/miespacio.html">Mi Lok'l</a></li>
-        <li><a href="../pages/login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
-        <li><a href="../pages/login.html"><i class="material-icons">logout</i></a></li> 
+        <li><a href="./lugares.html">Lugares</a></li>
+        <li><a href="./eventos.html">Eventos</a></li>
+        <li><a href="./invitaciones.html">Invitaciones</a></li>
+        <li><a href="./miespacio.html">Mi Lok'l</a></li>
+        <li><a href="./login.html" class="especial2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="color-white">Acceso</span></a></li>
+        <li><a href="./login.html"><i class="material-icons">logout</i></a></li> 
     </ul>
-    </nav>
   </header>
   <!-- <div class="titulo_lugares">
   <h1>Lugares</h1>
@@ -52,7 +51,7 @@
         
           <div class="card" style="width: 22rem" id="tarjeta1">
               <div>
-                  <img src="/assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1"> 
+                  <img src="./assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1"> 
               </div>
               <div class="texto--lugares">
                   <h5 class="card-title">
@@ -75,7 +74,7 @@
           </div>
 
           <div class="card" style="width: 22rem;" id="tarjeta2">
-              <img src="/assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
+              <img src="./assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b class="tituloLugar">Salón Xelhua.</b>
@@ -92,12 +91,12 @@
                   <a href="./contactanos.html" class="btn btn-primary">
                       Quiero más información
                   </a>
-                  <button Id="guardartarjeta" >guardar</button>
+                  <button id="guardarTarjeta" >Guardar</button>
                 </div>
           </div>
 
           <div class="card" style="width: 22rem;" id="tarjeta3">
-              <img src="/assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
+              <img src="./assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b class="tituloLugar">Salón Aquiahuac</b>
@@ -129,7 +128,7 @@
                       <div class="card">
                           <div class="card" style="width: 22rem;" id="tarjeta">
                               <div>
-                                  <img src="/assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1">
+                                  <img src="./assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1">
                               </div>
                               <div class="texto--lugares">
                                   <h5 class="card-title">
@@ -155,7 +154,7 @@
                   <div class="carousel-item">
                       <div class="card">
                           <div class="card" style="width: 22rem;" id="tarjeta">
-                              <img src="/assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
+                              <img src="./assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top" alt="...">
                               <div class="texto--lugares">
                                   <h5 class="card-title">
                                       <b class="tituloLugar">Salón Xelhua.</b>
@@ -180,7 +179,7 @@
                   <div class="carousel-item">
                       <div class="card">
                           <div class="card" style="width: 22rem;" id="tarjeta">
-                              <img src="/assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
+                              <img src="./assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top" alt="...">
                               <div class="texto--lugares">
                                   <h5 class="card-title">
                                       <b class="tituloLugar">Salón Aquiahuac</b>
@@ -220,7 +219,7 @@
   <section class="normal">
       <div class="container">
           <div class="card" style="width: 22rem;" id="tarjeta">
-              <img src="/assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
+              <img src="./assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b>Lienzo Charro del Pedregal</b>
@@ -242,7 +241,7 @@
           </div>
 
           <div class="card" style="width: 22rem;" id="tarjeta">
-              <img src="/assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
+              <img src="./assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b>Moezllonz Jardín</b>
@@ -264,7 +263,7 @@
           </div>
 
           <div class="card" style="width: 22rem;" id="tarjeta">
-              <img src="/assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
+              <img src="./assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b>Centro Veracruzano Coyoacán</b>
@@ -296,7 +295,7 @@
               <div class="carousel-item active">
                   <div class="card">
                       <div class="card" style="width: 22rem;" id="tarjeta">
-                          <img src="/assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
+                          <img src="./assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                               <h5 class="card-title">
                                   <b>Lienzo Charro del Pedregal</b>
@@ -323,7 +322,7 @@
               <div class="carousel-item">
                   <div class="card">
                       <div class="card" style="width: 22rem;" id="tarjeta">
-                          <img src="/assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
+                          <img src="./assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                               <h5 class="card-title">
                                   <b>Moezllonz Jardín</b>
@@ -349,7 +348,7 @@
               <div class="carousel-item">
                   <div class="card">
                       <div class="card" style="width: 22rem;" id="tarjeta">
-                          <img src="/assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
+                          <img src="./assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                               <h5 class="card-title">
                                   <b>Centro Veracruzano Coyoacán</b>
@@ -388,7 +387,7 @@
   <section class="normal">
       <div class="container">
           <div class="card" style="width: 22rem;" id="tarjeta">
-              <img src="/assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
+              <img src="./assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b>Terraza Dante</b>
@@ -410,7 +409,7 @@
           </div>
 
           <div class="card" style="width: 22rem;" id="tarjeta">
-              <img src="/assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
+              <img src="./assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                   <h5 class="card-title">
                       <b>Terraza Medellin</b>
@@ -432,7 +431,7 @@
           </div>
 
           <div class="card" style="width: 22rem;" id="tarjeta">
-              <img src="../assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
+              <img src="./assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
               <div class="texto--lugares">
                 <h5 class="card-title">
                     <b>Terraza Napoles</b>
@@ -464,7 +463,7 @@
               <div class="carousel-item active">
                   <div class="card">
                       <div class="card" style="width: 22rem;" id="tarjeta">
-                          <img src="/assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/multimedia/terraza-dante.jpg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                             <h5 class="card-title">
                                 <b>Terraza Dante</b>
@@ -491,7 +490,7 @@
               <div class="carousel-item">
                   <div class="card">
                       <div class="card" style="width: 22rem;" id="tarjeta">
-                          <img src="/assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/multimedia/terraza-medellin.jpg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                             <h5 class="card-title">
                                 <b>Terraza Medellin</b>
@@ -517,7 +516,7 @@
               <div class="carousel-item">
                   <div class="card">
                       <div class="card" style="width: 22rem;" id="tarjeta">
-                          <img src="../assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
+                          <img src="./assets/multimedia/terraza-napoles.jpg" class="card-img-top" alt="...">
                           <div class="texto--lugares">
                             <h5 class="card-title">
                                 <b>Terraza Napoles</b>
@@ -559,9 +558,9 @@
   <div class="grupo-1">
     <div class="box">
       <a href="#">Volver al inicio</a><br>
-      <a href="../pages/contactanos.html">Contáctanos</a><br>
-      <a href="../pages/acercadenosotros.html">Acerca de nosotros</a><br>
-      <a href="../pages/condiciones.html">Condiciones legales</a>
+      <a href="./contactanos.html">Contáctanos</a><br>
+      <a href="./acercadenosotros.html">Acerca de nosotros</a><br>
+      <a href="./condiciones.html">Condiciones legales</a>
     </div>
     <div class="box">
       <h2>SÍGUENOS</h2>
@@ -575,7 +574,7 @@
     <div class="box">
       <figure>
         <a href="#">
-          <img src="/assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
+          <img src="./assets/multimedia/logo-blanco.png" alt="Logo de SLee Dw">
         </a>
       </figure>
     </div>

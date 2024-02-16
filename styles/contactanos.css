@@ -15,7 +15,7 @@ main {
 }
 
 .imagen {
-    background-image: url(/assets/multimedia/bar.jpg);
+    background-image: url(../assets/multimedia/bar.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

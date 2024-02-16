@@ -190,7 +190,7 @@ main img{
 }
 
 .item1 {
-    background-image: url(/assets/multimedia/fiesta1.jpg);
+    background-image: url(../assets/multimedia/fiesta1.jpg);
     width: auto;
     height: auto;
     background-size: cover;
@@ -200,7 +200,7 @@ main img{
 }
 
 .item4 {
-    background-image: url(/assets/multimedia/fiesta2.jpg);
+    background-image: url(../assets/multimedia/fiesta2.jpg);
     width: auto;
     height: auto;
     background-size: cover;
@@ -210,7 +210,7 @@ main img{
 }
 
 .item5 {
-    background-image: url(/assets/multimedia/fiesta3.jpg);
+    background-image: url(../assets/multimedia/fiesta3.jpg);
     width: auto;
     height: auto;
     background-size: cover;

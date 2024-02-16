@@ -11,7 +11,7 @@ main .imagen1 {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-image: url(/assets/multimedia/bar.jpg);
+  background-image: url(../assets/multimedia/bar.jpg);
   filter: brightness(0.8);
   background-size: cover;
   background-position: center;
@@ -78,7 +78,7 @@ main .imagen1 {
 
 
 .item1 {
-  background-image: url(/assets/multimedia/fiesta1.jpg);
+  background-image: url(../assets/multimedia/fiesta1.jpg);
   width: auto;
   height: auto;
   background-size: cover;
@@ -88,7 +88,7 @@ main .imagen1 {
 }
 
 .item4 {
-  background-image: url(/assets/multimedia/fiesta2.jpg);
+  background-image: url(../assets/multimedia/fiesta2.jpg);
   width: auto;
   height: auto;
   background-size: cover;
@@ -98,7 +98,7 @@ main .imagen1 {
 }
 
 .item5 {
-  background-image: url(/assets/multimedia/fiesta3.jpg);
+  background-image: url(../assets/multimedia/fiesta3.jpg);
   width: auto;
   height: auto;
   background-size: cover;

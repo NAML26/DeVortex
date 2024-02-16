@@ -40,7 +40,7 @@ color: white;
     height: 75vh;
 
     /* Estos son los estilos para las imagenes */
-    background-image: url(/assets/multimedia/loklBack.JPG);
+    background-image: url(../assets/multimedia/loklBack.JPG);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

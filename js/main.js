@@ -16,7 +16,7 @@ cerrar.addEventListener("click", () => {
 
 document
   .getElementById("crear-invitacion")
-  .addEventListener("click", function () {
+  .addEventListener("click", () => {
     scrollToSection("container-crear-invitacion");
   });
 
@@ -121,7 +121,27 @@ userCardDiv.appendChild(botonDescargar);
 
   }
 
+  //redirección de registro completo a MiLokl
+  //<---------------------------------------->
+/*   // const registro = document.getElementById('toRegistroCompleto');
+  // registro.addEventListener('click', () =>{ */
+  //   /* e.preventDefault() */
+ /*  //   alert("Gracias por completar tu registro, tu Lok'l ha sido publicado con éxito");
+  //   window.location.href = 'miespacio.html' 
+  // });  */
 
+  //<---------------------------------------->
+
+  //  document.getElementById('myForm').addEventListener('submit', function (event) {
+  //   event.preventDefault();
+
+  //   alert("Gracias por completar tu registro, tu Lok'l ha sido publicado con éxito");
+
+  //   window.location.href = 'index.html' 
+    
+  // })
+
+  //<---------------------------------------->
 
 /****************************Término Página invitaciones****************************/
 
@@ -144,12 +164,8 @@ lugares.forEach(lugar => {
   lugaresContainer.appendChild(card);
 }); */
 
-/*const registro = document.getElementById('toRegistroCompleto');
-registro.addEventListener('click', (e) =>{
-  e.preventDefault()
-  window.location.href = '../registroCompleto.html'
-}); 
-llamar registro completo con el boton de anunciar espacio*/
+
+//llamar registro completo con el boton de anunciar espacio
 
 // const lugaresContainer = document.getElementById("lugaresContainer");
 
