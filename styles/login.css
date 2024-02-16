@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 
 .caja-imagen {
-    background-image: url(../assets/multimedia/morado-pared.png);
+    background-image: url(../assets/multimedia/morado-pared.jpeg);
     background-size: cover;
   background-position: center;
   margin: none;
@@ -14,7 +14,7 @@
  
 }
 .caja-imagen2 {
-    background-image: url(../assets/multimedia/morado-pared-espejo.png);
+    background-image: url(../assets/multimedia/morado-pared-espejo.jpeg);
     background-size: cover;
   background-position: center;
   margin: none;

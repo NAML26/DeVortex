@@ -114,7 +114,7 @@ botonDescargar.textContent = "Guardar invitación";
 botonDescargar.onclick = function() {
   const link = document.createElement("a");
   link.href = imagenCombinadaURL;
-  link.download = "invitacion_con_texto.png"; // Nombre del archivo
+  link.download = "invitacion_con_texto.jpeg"; // Nombre del archivo
   link.click();
 };
 userCardDiv.appendChild(botonDescargar);
