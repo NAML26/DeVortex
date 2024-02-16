@@ -3,11 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 
 
+h3{
+    text-align: center;
+}
+
 
 .invi-main {
   /* height: 433vh; */
   margin-bottom: 20px;
 }
+
 
 
 /* .contenedor-invitaciones-17, .contenedor-invitaciones-18, .contenedor-invitaciones-19 {
@@ -24,8 +29,17 @@
 .colorLetras {
     color: #732796;
     font-weight: bolder;
+
 } 
 
+/*aplicar efecto a imagen de invitación muestra */
+.img-fluid {
+    transition: transform 0.5s ease;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.1);
+  }
 
 
 /*.resaltar {
@@ -126,10 +140,15 @@ justify-content: center;
    /*  border: #732796 solid 5px; */
   
 
-   #userCard {
-    width: 500px;
+   #userCard{
+    display: flex;
+    flex-direction: column;
+   }
+
+   #userCard img{
+    width: 450px;
     /* min-height: 700px; */
-   
+    margin-bottom: 20px;
   } 
 
 
@@ -141,5 +160,4 @@ justify-content: center;
    /*  text-decoration: none; */
     color:white;
   }
-
 

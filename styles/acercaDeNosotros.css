@@ -51,13 +51,31 @@ main .imagen1 {
   margin-top: 10px;
 }
 
+
 .item {
   border: 1px solid #ccc;
+  border-radius: 10px;
   padding: 20px;
   margin: 10px;
   text-align: center;
   height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
 }
+
+.item p {
+  text-align: center;
+}
+.item h1{
+  text-align: center;
+  font-weight: bold;
+  color:  #732796 ;
+  font-size: 35px;
+}
+
+
 
 .item1 {
   background-image: url(/assets/multimedia/fiesta1.jpg);
@@ -88,6 +106,7 @@ main .imagen1 {
   background-repeat: no-repeat;
   border-radius: 10px;
 }
+
 
 @media screen and (max-width: 550px) {
   .contenedor {
